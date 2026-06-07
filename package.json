@@ -1,0 +1,28 @@
+{
+  "name": "centrum-otulone-chatbot",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "npm run build:widget && next dev",
+    "build:widget": "node scripts/build-widget.mjs",
+    "build:widget:watch": "node scripts/build-widget.mjs --watch",
+    "build": "npm run build:widget && next build",
+    "start": "next start",
+    "lint": "tsc --noEmit"
+  },
+  "dependencies": {
+    "next": "^16.2.7",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
+  },
+  "devDependencies": {
+    "esbuild": "^0.25.0",
+    "@types/node": "^20.14.0",
+    "@types/react": "^18.3.3",
+    "@types/react-dom": "^18.3.0",
+    "autoprefixer": "^10.4.19",
+    "postcss": "^8.4.39",
+    "tailwindcss": "^3.4.4",
+    "typescript": "^5.5.2"
+  }
+}
