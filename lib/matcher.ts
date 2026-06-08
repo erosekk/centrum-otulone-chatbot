@@ -8,15 +8,7 @@ export interface MatchResult {
   isFallback: boolean;
 }
 
-// Intents that return a generic catalogue rather than a specific service answer.
-// When one of these would win but a service-specific intent also matches,
-// we prefer the specific one so "ile kosztuje terapia par" → terapia_par,
-// not the full cennik dump.
 const GENERIC_INTENT_IDS = new Set(["cennik", "platnosc"]);
-
-// Trigger words/phrases that signal a price question.
-// Single-word triggers are checked as whole tokens to avoid false substring
-// hits (e.g. "cennik" must not match standalone "cena").
 const PRICE_SINGLE_TRIGGERS = new Set(["cena", "koszt", "koszty"]);
 const PRICE_PHRASE_TRIGGERS = [
   "ile kosztuje", "ile kosztuja", "ile kosztujecie",
@@ -34,29 +26,71 @@ function normalize(text: string): string {
     .trim();
 }
 
-// Triangular scoring: an n-word phrase earns n*(n+1)/2 points.
-//   1 word  →  1 pt   (e.g. "adhd")
-//   2 words →  3 pts  (e.g. "terapia par")
-//   3 words →  6 pts  (e.g. "terapia dla par")
-//   4 words → 10 pts  (e.g. "ile kosztuje terapia par")
-// Longer, more specific phrases naturally outrank shorter generic ones.
+// Triangular scoring: n-word phrase = n*(n+1)/2 points
 function phraseScore(normalizedKw: string): number {
   const n = normalizedKw.split(" ").length;
   return (n * (n + 1)) / 2;
 }
 
+// ── Fuzzy matching (Levenshtein) ──────────────────────────────────────────────
+
+// Standard Levenshtein distance (space-optimised, two-row DP).
+// Returns 99 early when length difference alone exceeds the max allowed distance.
+function levenshtein(a: string, b: string): number {
+  if (Math.abs(a.length - b.length) > 2) return 99;
+  const m = a.length, n = b.length;
+  let prev = Array.from({ length: n + 1 }, (_, j) => j);
+  for (let i = 1; i <= m; i++) {
+    const curr: number[] = [i];
+    for (let j = 1; j <= n; j++) {
+      curr[j] =
+        a[i - 1] === b[j - 1]
+          ? prev[j - 1]
+          : 1 + Math.min(prev[j], curr[j - 1], prev[j - 1]);
+    }
+    prev = curr;
+  }
+  return prev[n];
+}
+
+// How many typos we tolerate per keyword word, based on word length:
+//   ≤ 3 chars  → 0  (short words must be exact – avoids noise)
+//   4–5 chars  → 1  (e.g. "leki" ≈ "leku", "adres" ≈ "adrs")
+//   ≥ 6 chars  → 2  (e.g. "psycholog" ≈ "psyholog", "terapia" ≈ "terapi")
+function maxEditDist(word: string): number {
+  if (word.length <= 3) return 0;
+  if (word.length <= 5) return 1;
+  return 2;
+}
+
+// Checks whether a single keyword word fuzzy-matches any word in the input.
+function wordFuzzyMatchesInput(kwWord: string, inputWords: string[]): boolean {
+  const limit = maxEditDist(kwWord);
+  return inputWords.some(w => levenshtein(w, kwWord) <= limit);
+}
+
+// Full keyword match: first try exact substring (fast path), then fuzzy word-by-word.
+function keywordMatches(normalizedInput: string, normalizedKw: string, inputWords: string[]): boolean {
+  // Fast path — exact substring (same as before, handles all correct inputs instantly)
+  if (normalizedInput.includes(normalizedKw)) return true;
+
+  // Fuzzy path — every word in the keyword must fuzzy-match some word in the input
+  const kwWords = normalizedKw.split(" ");
+  return kwWords.every(kwWord => wordFuzzyMatchesInput(kwWord, inputWords));
+}
+
 function scoreIntent(normalizedInput: string, keywords: string[]): number {
+  const inputWords = normalizedInput.split(/\s+/);
   let score = 0;
   for (const raw of keywords) {
     const kw = normalize(raw);
-    if (normalizedInput.includes(kw)) {
+    if (keywordMatches(normalizedInput, kw, inputWords)) {
       score += phraseScore(kw);
     }
   }
   return score;
 }
 
-// Returns true when the input clearly contains a price-related word or phrase.
 function hasPriceTrigger(normalizedInput: string): boolean {
   const tokens = normalizedInput.split(/\s+/);
   if (tokens.some(t => PRICE_SINGLE_TRIGGERS.has(t))) return true;
@@ -66,7 +100,7 @@ function hasPriceTrigger(normalizedInput: string): boolean {
 export function matchIntent(userInput: string): MatchResult {
   const normalizedInput = normalize(userInput);
 
-  // Crisis check — always highest priority regardless of other scores.
+  // Crisis check — always highest priority.
   const crisisScore = scoreIntent(normalizedInput, knowledge.crisis.keywords);
   if (crisisScore > 0) {
     return {
@@ -78,7 +112,6 @@ export function matchIntent(userInput: string): MatchResult {
     };
   }
 
-  // Score every intent, then sort descending so index-0 is the best match.
   const scored = knowledge.intents.map(intent => ({
     intent,
     score: scoreIntent(normalizedInput, intent.keywords),
@@ -97,18 +130,8 @@ export function matchIntent(userInput: string): MatchResult {
     };
   }
 
-  // Disambiguation: if the top-scoring intent is a generic catalogue (cennik)
-  // AND the query contains a price trigger, AND a service-specific intent also
-  // matched — prefer the specific answer over the generic price list.
-  // Example: "ile kosztuje terapia par" → cennik wins on raw score, but
-  // terapia_par matched "terapia par", so we return terapia_par instead.
-  //
-  // Guard: specific intent must score at least as high as the generic intent.
-  // This prevents vague single-word matches (e.g. "konsultacja" = 1 pt) from
-  // overriding the cennik when the user clearly asked for a price list.
+  // Disambiguation: prefer specific intent over generic cennik when price is asked.
   if (GENERIC_INTENT_IDS.has(best.intent.id) && hasPriceTrigger(normalizedInput)) {
-    // Minimum score of 3 ≈ a 2-word phrase match (triangular: 2*3/2=3).
-    // Single-word matches (score=1) are too vague to override the cennik.
     const specificMatch = scored.find(
       s => s.score >= 3 && !GENERIC_INTENT_IDS.has(s.intent.id)
     );
