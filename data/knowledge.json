@@ -443,7 +443,9 @@
         "jakie macie usługi", "jakie macie uslugi",
         "co centrum oferuje", "co centrum otulone oferuje",
         "typy terapii", "rodzaje terapii", "jakie terapie",
+        "typy terapi", "rodzaje terapi", "jakie terapi",
         "jakie typy terapii", "jakie rodzaje terapii",
+        "jakie typy terapi", "jakie rodzaje terapi",
         "jakie macie terapie", "jakie terapie macie",
         "jakie są rodzaje terapii", "jakie sa rodzaje terapii",
         "jakie formy terapii", "formy terapii",
@@ -461,7 +463,7 @@
     {
       "id": "psychoterapia",
       "keywords": [
-        "terapia", "psychoterapia", "terapia indywidualna", "terapia psychologiczna",
+        "terapia", "terapi", "psychoterapia", "terapia indywidualna", "terapia psychologiczna",
         "co to jest terapia", "co to jest psychoterapia",
         "jak działa terapia", "jak dziala terapia", "na czym polega terapia",
         "czy warto iść na terapię", "czy warto isc na terapie",
@@ -510,7 +512,7 @@
     {
       "id": "terapia_traumy",
       "keywords": [
-        "trauma", "traumy", "traumatyczne", "terapia traumy", "terapii traumy", "ptsd",
+        "trauma", "traumy", "traumatyczne", "terapia traumy", "terapii traumy", "terapi traumy", "ptsd",
         "przeżycia traumatyczne", "trudne doświadczenia", "trudne doswiadczenia",
         "przemoc", "molestowanie", "gwałt", "gwalt",
         "wypadek", "strata", "żałoba", "zaloba", "krzywda z dzieciństwa",
@@ -567,6 +569,7 @@
       "id": "terapia_par",
       "keywords": [
         "terapia par", "terapia pary", "terapia dla par",
+        "terapi par", "terapi pary", "terapi dla par",
         "terapii par", "terapii pary", "terapia dla pary",
         "terapia związku", "terapia zwiazku", "para", "związek", "zwiazek",
         "partnerka", "partner", "mąż", "maz", "żona", "zona",
