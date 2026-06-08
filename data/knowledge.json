@@ -282,7 +282,13 @@
         "jak przełożyć wizytę", "jak przelozyc wizyte",
         "chcę anulować", "chce anuloac",
         "czy można odwołać", "czy mozna odwolac",
-        "spóźnię się", "spoznie sie"
+        "spóźnię się", "spoznie sie",
+        "nie będzie mnie", "nie bedzie mnie",
+        "nie będzie mnie na wizycie", "nie bedzie mnie na wizycie",
+        "nie będzie mnie na spotkaniu", "nie bedzie mnie na spotkaniu",
+        "nie mogę dotrzeć", "nie moge dotrzec",
+        "nie dotrę na wizytę", "nie dotre na wizyte",
+        "nie stawię się na wizycie", "nie stawie sie na wizycie"
       ],
       "response": "Jeśli potrzebujesz odwołać lub przełożyć wizytę, najlepiej skontaktuj się z recepcją możliwie jak najwcześniej.\n\nWizytę można bezpłatnie odwołać lub przełożyć najpóźniej 48 godzin przed umówionym terminem. W przypadku późniejszego odwołania wizyta jest pełnopłatna.\n\n📞 Telefon: 573 909 822\n📧 E-mail: recepcja@centrumotulone.pl\n\nRecepcja czynna: pon–pt, 8:00–21:00"
     },
