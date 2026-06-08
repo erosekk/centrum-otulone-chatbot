@@ -102,9 +102,15 @@ export function matchIntent(userInput: string): MatchResult {
   // matched — prefer the specific answer over the generic price list.
   // Example: "ile kosztuje terapia par" → cennik wins on raw score, but
   // terapia_par matched "terapia par", so we return terapia_par instead.
+  //
+  // Guard: specific intent must score at least as high as the generic intent.
+  // This prevents vague single-word matches (e.g. "konsultacja" = 1 pt) from
+  // overriding the cennik when the user clearly asked for a price list.
   if (GENERIC_INTENT_IDS.has(best.intent.id) && hasPriceTrigger(normalizedInput)) {
+    // Minimum score of 3 ≈ a 2-word phrase match (triangular: 2*3/2=3).
+    // Single-word matches (score=1) are too vague to override the cennik.
     const specificMatch = scored.find(
-      s => s.score > 0 && !GENERIC_INTENT_IDS.has(s.intent.id)
+      s => s.score >= 3 && !GENERIC_INTENT_IDS.has(s.intent.id)
     );
     if (specificMatch) {
       return {
