@@ -54,12 +54,12 @@ function levenshtein(a: string, b: string): number {
 }
 
 // How many typos we tolerate per keyword word, based on word length:
-//   ≤ 3 chars  → 0  (short words must be exact – avoids noise)
-//   4–5 chars  → 1  (e.g. "leki" ≈ "leku", "adres" ≈ "adrs")
-//   ≥ 6 chars  → 2  (e.g. "psycholog" ≈ "psyholog", "terapia" ≈ "terapi")
+//   ≤ 5 chars  → 0  (short words must be exact – avoids false positives like "sobie"≈"fobie", "nie"≈"mnie")
+//   6 chars    → 1  (e.g. "bedzie"≈"bedac", "smutna"≈"smutne")
+//   ≥ 7 chars  → 2  (e.g. "psycholog"≈"psyholog", "terapia"≈"terapi")
 function maxEditDist(word: string): number {
-  if (word.length <= 3) return 0;
-  if (word.length <= 5) return 1;
+  if (word.length <= 5) return 0;
+  if (word.length <= 6) return 1;
   return 2;
 }
 
