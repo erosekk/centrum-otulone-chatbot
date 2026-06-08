@@ -154,7 +154,7 @@
         "jak do was zadzwonić", "jak do was zadzwonic",
         "kontakt z centrum", "dane do kontaktu", "jak się odezwać"
       ],
-      "response": "Dane kontaktowe Centrum Otulone:\n\n📞 Telefon: 573 909 822\n📧 E-mail: recepcja@centrumotulone.pl\n🌐 Formularz: centrumotulone.pl/kontakt\n\nRecepcja czynna:\nPoniedziałek – piątek: 8:00 – 13:00 i 16:00 – 21:00\n(przerwa: 13:00 – 16:00)"
+      "response": "Dane kontaktowe Centrum Otulone:\n\n📞 Telefon: 573 909 822\n📧 E-mail: recepcja@centrumotulone.pl\n🌐 Formularz: centrumotulone.pl/kontakt\n\nRecepcja czynna:\nPoniedziałek – piątek: 8:00 – 21:00"
     },
 
     {
@@ -172,7 +172,7 @@
         "jaka ulica", "które piętro", "ktore pietro",
         "gdzie is centrum otulone"
       ],
-      "response": "Centrum Otulone mieści się pod adresem:\n\n📍 ul. Kartuska 426b/8\n    80-125 Gdańsk – Jasień\n\nW razie pytań o dojazd lub lokalizację:\n📞 573 909 822\n📧 recepcja@centrumotulone.pl"
+      "response": "Centrum Otulone mieści się pod adresem:\n\n📍 ul. Kartuska 426b/8\n    80-125 Gdańsk – Jasień\n\n⏰ Recepcja czynna: pon–pt, 8:00 – 21:00\n\nW razie pytań o dojazd lub lokalizację:\n📞 573 909 822\n📧 recepcja@centrumotulone.pl"
     },
 
     {
@@ -194,7 +194,7 @@
     {
       "id": "godziny",
       "keywords": [
-        "godziny", "godziny otwarcia", "kiedy", "kiedy otwarte", "kiedy czynne",
+        "godziny", "godziny otwarcia", "kiedy otwarte", "kiedy czynne",
         "godziny pracy", "otwarte", "zamknięte", "zamkniete",
         "czy dziś", "czy dzis", "pn", "wt", "sr", "śr", "czw", "pt",
         "poniedziałek", "poniedzialek", "wtorek", "środa", "sroda",
@@ -211,9 +211,12 @@
         "czy w weekend czynne", "do której pracujecie",
         "czy w sobotę pracujecie", "czy w sobote pracujecie",
         "czy w niedzielę pracujecie", "czy w niedziele pracujecie",
-        "w sobotę pracujecie", "w sobote pracujecie"
+        "w sobotę pracujecie", "w sobote pracujecie",
+        "czy w sobotę jesteście czynni", "czy w sobote jestescie czynni",
+        "czy jesteście czynni", "czy jestescie czynni",
+        "kiedy są godziny", "kiedy sa godziny"
       ],
-      "response": "Godziny pracy recepcji:\n\n⏰ Poniedziałek – piątek:\n   8:00 – 13:00 oraz 16:00 – 21:00\n   (przerwa: 13:00 – 16:00)\n\n❌ Sobota i niedziela: nieczynne\n\nW pilnych sprawach:\n📞 573 909 822\n📧 recepcja@centrumotulone.pl"
+      "response": "Godziny pracy recepcji:\n\n⏰ Poniedziałek – piątek: 8:00 – 21:00\n\n❌ Sobota i niedziela: nieczynne\n\nW pilnych sprawach:\n📞 573 909 822\n📧 recepcja@centrumotulone.pl"
     },
 
     {
@@ -419,7 +422,11 @@
         "jakie dokumenty", "czy trzeba przynieść", "czy trzeba przyniosc",
         "czy potrzebuję skierowania", "czy potrzebuje skierowania",
         "czy trzeba skierowanie", "czy muszę mieć skierowanie",
-        "co ze sobą zabrać", "co ze soba zabrac"
+        "co ze sobą zabrać", "co ze soba zabrac",
+        "co mam ze sobą zabrać", "co mam ze soba zabrac",
+        "co mam zabrać", "co mam zabrac",
+        "co wziąć ze sobą", "co wziac ze soba",
+        "co mam wziąć", "co mam wziac"
       ],
       "response": "Na pierwszą wizytę w Centrum Otulone nie są wymagane żadne specjalne dokumenty ani skierowanie.\n\nMożesz przyjść tak po prostu — wystarczy Twoja obecność i gotowość do rozmowy.\n\nJeśli masz pytania przed wizytą:\n📞 573 909 822\n📧 recepcja@centrumotulone.pl"
     },
@@ -634,7 +641,12 @@
         "czy lekarz psychiatra", "psychiatra czy psycholog",
         "kto może przepisać leki", "kto moze przepisac leki",
         "czy mogę dostać leki", "czy moge dostac leki",
-        "czy można dostać receptę", "czy mozna dostac recepte"
+        "czy można dostać receptę", "czy mozna dostac recepte",
+        "przepisać leki", "przepisac leki",
+        "czy możecie przepisać leki", "czy mozecie przepisac leki",
+        "czy możesz przepisać", "czy mozesz przepisac",
+        "przepisanie leków", "przepisanie lekow",
+        "przepisać antydepresanty", "przepisac antydepresanty"
       ],
       "response": "Centrum Otulone specjalizuje się w psychoterapii — nie przepisujemy leków ani nie wystawiamy zwolnień lekarskich (L4).\n\nTo zadania lekarza psychiatry. Jeśli potrzebujesz konsultacji psychiatrycznej lub farmakoterapii, możemy:\n• Udzielić informacji o tym, gdzie szukać psychiatry\n• W razie potrzeby współpracować z Twoim psychiatrą\n\nPytania?\n📞 573 909 822\n📧 recepcja@centrumotulone.pl"
     },
@@ -757,7 +769,12 @@
         "czy ktoś będzie wiedział", "czy ktos bedzie wiedzial",
         "czy mogę być anonimowa", "czy moge byc anonimowa",
         "czy jest poufność", "czy jest poufnosc",
-        "czy zachowujecie tajemnicę", "czy zachowujecie tajemnice"
+        "czy zachowujecie tajemnicę", "czy zachowujecie tajemnice",
+        "poufne", "czy to jest poufne", "czy sesje są poufne", "czy sesje sa poufne",
+        "sesje są poufne", "sesje sa poufne",
+        "czy wizyty są poufne", "czy wizyty sa poufne",
+        "czy rozmowy są poufne", "czy rozmowy sa poufne",
+        "czy informacje są poufne", "czy informacje sa poufne"
       ],
       "response": "Wszystkie spotkania w Centrum Otulone objęte są ścisłą tajemnicą zawodową.\n\nInformacje przekazane podczas sesji są bezpieczne i poufne. Psycholog/psychoterapeuta jest prawnie i etycznie zobowiązany do zachowania tajemnicy zawodowej.\n\nWyjątki od poufności dotyczą wyłącznie sytuacji bezpośredniego zagrożenia życia — jest to standard etyczny i prawny obowiązujący w całej Polsce.\n\nSesje nie są nagrywane.\n\nMasz więcej pytań?\n📞 573 909 822\n📧 recepcja@centrumotulone.pl"
     },
@@ -1055,7 +1072,11 @@
         "co jeśli chcę zakończyć", "co jesli chce zakonczyc",
         "jak zakończyć terapię", "jak zakonczyc terapie",
         "czy terapia mnie do czegoś zobowiązuje",
-        "czy muszę kontynuować terapię"
+        "czy muszę kontynuować terapię",
+        "zakończyć terapię kiedy chcę", "zakonczyc terapie kiedy chce",
+        "czy mogę zakończyć kiedy chcę", "czy moge zakonczyc kiedy chce",
+        "zakończyć w dowolnym momencie", "zakonczyc w dowolnym momencie",
+        "czy mogę odejść z terapii", "czy moge odejsc z terapii"
       ],
       "response": "Tak — możesz zakończyć terapię w dowolnym momencie. To nie jest zobowiązanie na całe życie.\n\nW przypadku terapii długoterminowej zaleca się właściwe zamknięcie procesu — ostatnie sesje poświęcone są podsumowaniu pracy i świadomemu zakończeniu współpracy.\n\nJeśli rozważasz zakończenie lub przerwę, warto porozmawiać o tym z terapeutką — to ważny temat, który można omówić wspólnie.\n\nPytania?\n📞 573 909 822\n📧 recepcja@centrumotulone.pl"
     }
