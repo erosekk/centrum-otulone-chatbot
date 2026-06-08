@@ -45,7 +45,7 @@
       "zagrożenie życia", "zagrozenie zycia",
       "ktoś mi zagraża", "ktos mi zagraza"
     ],
-    "response": "Przykro mi, że przechodzisz przez trudną sytuację.\n\nJeśli istnieje ryzyko, że możesz zrobić sobie krzywdę lub jesteś w bezpośrednim zagrożeniu — zadzwoń pod numer alarmowy 112 lub skontaktuj się z centrum interwencji kryzysowej.\n\nBezpłatne wsparcie przez całą dobę:\n• Telefon Zaufania dla Dorosłych: 116 123\n• Niebieska Linia (przemoc w rodzinie): 116 123\n\nW sprawach związanych z ofertą Centrum Otulone skontaktuj się z recepcją:\n📞 573 909 822"
+    "response": "Przykro mi, że przechodzisz przez trudną sytuację.\n\nJeśli istnieje ryzyko, że możesz zrobić sobie krzywdę lub jesteś w bezpośrednim zagrożeniu — zadzwoń pod numer alarmowy 112 lub skontaktuj się z centrum interwencji kryzysowej.\n\nBezpłatne wsparcie przez całą dobę:\n• Telefon Zaufania dla Dorosłych: 116 123\n• Niebieska Linia (przemoc w rodzinie): 116 123\n\nW sprawach związanych z ofertą Centrum Otulone skontaktuj się z recepcją:\n📞 573 909 822\n📧 recepcja@centrumotulone.pl"
   },
 
   "intents": [
@@ -87,7 +87,7 @@
         "za ile", "jakie są ceny", "jakie sa ceny", "przybliżona cena",
         "ceny usług", "koszt sesji", "ile kosztuje sesja", "ile kosztuje wizyta"
       ],
-      "response": "Cennik Centrum Otulone:\n\n• Bezpłatna konsultacja telefoniczna (15 min) — 0 zł\n• Konsultacja psychologiczna (50 min) — 250 zł\n• Psychoterapia indywidualna (50 min) — 250 zł\n• Psychoterapia z pracą z ciałem (50 min) — 250 zł\n• Terapia traumy (50 min) — 250 zł\n• Konsultacja seksuologiczna (50 min) — 250 zł\n• Diagnoza ADHD DIVA5 (pakiet 3 sesji) — 960 zł\n• Terapia matki i dorosłej córki (50 min) — 350 zł\n• Terapia par (60 min) — 300 zł\n• Zaświadczenie o terapii — 50 zł\n\nMasz pytania? Zadzwoń: 573 909 822"
+      "response": "Cennik Centrum Otulone:\n\n• Bezpłatna konsultacja telefoniczna (15 min) — 0 zł\n• Konsultacja psychologiczna (50 min) — 250 zł\n• Psychoterapia indywidualna (50 min) — 250 zł\n• Psychoterapia z pracą z ciałem (50 min) — 250 zł\n• Terapia traumy (50 min) — 250 zł\n• Konsultacja seksuologiczna (50 min) — 250 zł\n• Diagnoza ADHD DIVA5 (pakiet 3 sesji) — 960 zł\n• Terapia matki i dorosłej córki (50 min) — 350 zł\n• Terapia par (60 min) — 300 zł\n• Zaświadczenie o terapii — 50 zł\n\nMasz pytania?\n📞 573 909 822\n📧 recepcja@centrumotulone.pl"
     },
 
     {
@@ -119,7 +119,7 @@
         "bez opłat", "prywatnie", "prywatna", "na funduszu",
         "czy jest na nfz", "czy przyjmujecie nfz"
       ],
-      "response": "Centrum Otulone działa jako prywatna placówka — nie realizuje świadczeń w ramach NFZ.\n\nWszystkie usługi są odpłatne zgodnie z cennikiem. Jeśli zależy Ci na refundowanej pomocy psychologicznej, możemy polecić kontakt z publicznymi przychodniami zdrowia psychicznego.\n\nMasz pytania? Zadzwoń: 573 909 822"
+      "response": "Centrum Otulone działa jako prywatna placówka — nie realizuje świadczeń w ramach NFZ.\n\nWszystkie usługi są odpłatne zgodnie z cennikiem. Jeśli zależy Ci na refundowanej pomocy psychologicznej, możemy polecić kontakt z publicznymi przychodniami zdrowia psychicznego.\n\nMasz pytania?\n📞 573 909 822\n📧 recepcja@centrumotulone.pl"
     },
 
     {
@@ -165,7 +165,7 @@
         "czwartek", "piątek", "piatek", "weekend", "sobota", "niedziela",
         "od kiedy do kiedy", "rano", "wieczorem"
       ],
-      "response": "Godziny pracy recepcji:\n\n⏰ Poniedziałek – piątek:\n   8:00 – 13:00 oraz 16:00 – 21:00\n   (przerwa: 13:00 – 16:00)\n\n❌ Sobota i niedziela: nieczynne\n\nW pilnych sprawach pisz: recepcja@centrumotulone.pl"
+      "response": "Godziny pracy recepcji:\n\n⏰ Poniedziałek – piątek:\n   8:00 – 13:00 oraz 16:00 – 21:00\n   (przerwa: 13:00 – 16:00)\n\n❌ Sobota i niedziela: nieczynne\n\nW pilnych sprawach:\n📞 573 909 822\n📧 recepcja@centrumotulone.pl"
     },
 
     {
@@ -240,7 +240,7 @@
         "jak długo trwa spotkanie", "jak dlugo trwa spotkanie",
         "jak długo trwa wizyta", "jak dlugo trwa wizyta"
       ],
-      "response": "Czas trwania sesji w Centrum Otulone:\n\n• Większość sesji (konsultacja, terapia): 50 minut\n• Terapia par: 60 minut\n• Bezpłatna konsultacja telefoniczna (0 zł): 15 minut\n• Diagnoza ADHD DIVA5: 3 sesje × 50 minut\n\nJeśli masz pytania o konkretną usługę:\n📞 573 909 822"
+      "response": "Czas trwania sesji w Centrum Otulone:\n\n• Większość sesji (konsultacja, terapia): 50 minut\n• Terapia par: 60 minut\n• Bezpłatna konsultacja telefoniczna (0 zł): 15 minut\n• Diagnoza ADHD DIVA5: 3 sesje × 50 minut\n\nMasz pytania o konkretną usługę?\n📞 573 909 822\n📧 recepcja@centrumotulone.pl"
     },
 
     {
@@ -258,7 +258,7 @@
         "jak długo się chodzi na terapię", "jak dlugo sie chodzi na terapie",
         "ile sesji potrzebuję", "ile sesji potrzebuje", "jak wiele spotkań"
       ],
-      "response": "Czas trwania całej terapii jest bardzo indywidualny i zależy od Twoich celów oraz potrzeb.\n\nOrientacyjne ramy:\n• Konsultacje diagnostyczne: ok. 3 spotkań\n• Krótkoterminowe wsparcie: 6–12 sesji\n• Terapia krótkoterminowa: 3–6 miesięcy\n• Terapia długoterminowa: 6 miesięcy i więcej\n\nCzęstotliwość spotkań jest ustalana indywidualnie — zazwyczaj raz w tygodniu.\n\nMożesz też skorzystać z jednorazowej konsultacji, bez zobowiązania do dalszej terapii.\n\nWięcej informacji:\n📞 573 909 822"
+      "response": "Czas trwania całej terapii jest bardzo indywidualny i zależy od Twoich celów oraz potrzeb.\n\nOrientacyjne ramy:\n• Konsultacje diagnostyczne: ok. 3 spotkań\n• Krótkoterminowe wsparcie: 6–12 sesji\n• Terapia krótkoterminowa: 3–6 miesięcy\n• Terapia długoterminowa: 6 miesięcy i więcej\n\nCzęstotliwość spotkań jest ustalana indywidualnie — zazwyczaj raz w tygodniu.\n\nMożesz też skorzystać z jednorazowej konsultacji, bez zobowiązania do dalszej terapii.\n\nWięcej informacji:\n📞 573 909 822\n📧 recepcja@centrumotulone.pl"
     },
 
     {
@@ -270,7 +270,7 @@
         "spotkania co tydzień", "spotkania co tydzien", "jak regularnie",
         "co ile czasu", "jak często spotykamy się", "jak czesto spotykamy sie"
       ],
-      "response": "Sesje w Centrum Otulone odbywają się zazwyczaj raz w tygodniu — taka częstotliwość jest zalecana dla najlepszych efektów terapii.\n\nW sytuacjach kryzysowych lub przy terapii psychodynamicznej spotkania mogą odbywać się dwa razy w tygodniu.\n\nCzęstotliwość jest ustalana indywidualnie ze specjalistką, zależnie od Twoich potrzeb i dostępności terminów.\n\nPytania? 📞 573 909 822"
+      "response": "Sesje w Centrum Otulone odbywają się zazwyczaj raz w tygodniu — taka częstotliwość jest zalecana dla najlepszych efektów terapii.\n\nW sytuacjach kryzysowych lub przy terapii psychodynamicznej spotkania mogą odbywać się dwa razy w tygodniu.\n\nCzęstotliwość jest ustalana indywidualnie ze specjalistką, zależnie od Twoich potrzeb i dostępności terminów.\n\nPytania?\n📞 573 909 822\n📧 recepcja@centrumotulone.pl"
     },
 
     {
@@ -284,7 +284,7 @@
         "co przygotować", "co przygotowac", "co przynieść",
         "co przyniosc", "jak się przygotować", "jak sie przygotowac"
       ],
-      "response": "Pierwsza wizyta to konsultacja psychologiczna (50 min).\n\nCo się dzieje podczas pierwszego spotkania:\n• Poznasz swoją specjalistkę w bezpiecznej, komfortowej atmosferze\n• Opiszesz swoje trudności i oczekiwania we własnym tempie\n• Wspólnie określicie obszary i cele dalszej pracy\n• Dowiesz się, jakie kolejne kroki są zalecane\n\nNie musisz się specjalnie przygotowywać — po prostu przyjdź.\n\nPrzed pierwszą wizytą możesz skorzystać z bezpłatnej 15-minutowej konsultacji telefonicznej (0 zł).\n\nAby umówić: 📞 573 909 822"
+      "response": "Pierwsza wizyta to konsultacja psychologiczna (50 min).\n\nCo się dzieje podczas pierwszego spotkania:\n• Poznasz swoją specjalistkę w bezpiecznej, komfortowej atmosferze\n• Opiszesz swoje trudności i oczekiwania we własnym tempie\n• Wspólnie określicie obszary i cele dalszej pracy\n• Dowiesz się, jakie kolejne kroki są zalecane\n\nNie musisz się specjalnie przygotowywać — po prostu przyjdź.\n\nPrzed pierwszą wizytą możesz skorzystać z bezpłatnej 15-minutowej konsultacji telefonicznej (0 zł).\n\nAby umówić:\n📞 573 909 822\n📧 recepcja@centrumotulone.pl"
     },
 
     {
@@ -338,7 +338,7 @@
         "kiedy warto pójść na terapię", "kiedy warto pojsc na terapie",
         "terapia dla każdego", "terapia nie tylko dla chorych"
       ],
-      "response": "Psychoterapia indywidualna w Centrum Otulone to regularne spotkania (50 min) z psychoterapeutką.\n\nCzego możesz się spodziewać:\n• Bezpiecznej, nieoceniającej przestrzeni do rozmowy\n• Pracy nad emocjami, przekonaniami i wzorcami zachowań\n• Stopniowego zrozumienia przyczyn Twoich trudności\n• Rozwijania nowych sposobów radzenia sobie\n\nCentrum pracuje w nurtach: CBT, ericksonowskim, psychodynamicznym, systemowym i integracyjnym, a także w terapii traumy.\n\nNie musisz wiedzieć, jakiego nurtu potrzebujesz — specjalistka pomoże Ci to ustalić.\n\nTerapia jest dla każdej, kto chce lepiej rozumieć siebie — nie musisz być w kryzysie.\n\nKoszt: 250 zł / 50 min\nAby umówić: 📞 573 909 822"
+      "response": "Psychoterapia indywidualna w Centrum Otulone to regularne spotkania (50 min) z psychoterapeutką.\n\nCzego możesz się spodziewać:\n• Bezpiecznej, nieoceniającej przestrzeni do rozmowy\n• Pracy nad emocjami, przekonaniami i wzorcami zachowań\n• Stopniowego zrozumienia przyczyn Twoich trudności\n• Rozwijania nowych sposobów radzenia sobie\n\nCentrum pracuje w nurtach: CBT, ericksonowskim, psychodynamicznym, systemowym i integracyjnym, a także w terapii traumy.\n\nNie musisz wiedzieć, jakiego nurtu potrzebujesz — specjalistka pomoże Ci to ustalić.\n\nTerapia jest dla każdej, kto chce lepiej rozumieć siebie — nie musisz być w kryzysie.\n\nKoszt: 250 zł / 50 min\nAby umówić:\n📞 573 909 822\n📧 recepcja@centrumotulone.pl"
     },
 
     {
@@ -381,7 +381,7 @@
         "napięcia mięśniowe", "napiecia miesniowe", "psychosomatyczne",
         "stres w ciele", "emocje w ciele"
       ],
-      "response": "Psychoterapia z pracą z ciałem łączy rozmowę terapeutyczną z technikami somatycznymi.\n\nSesje mogą obejmować:\n• Ćwiczenia oddechowe i pracę z głosem\n• Uważność na sygnały ciała\n• Ruch i rozluźnianie napięć\n• Pracę w pozycji stojącej lub na macie\n\nDotyk jest stosowany wyłącznie za wyraźną zgodą, w bezpiecznych granicach terapeutycznych.\n\nPodejście oparte na Core Energetics.\n\nKoszt: 250 zł / 50 min\nAby umówić: 📞 573 909 822"
+      "response": "Psychoterapia z pracą z ciałem łączy rozmowę terapeutyczną z technikami somatycznymi.\n\nSesje mogą obejmować:\n• Ćwiczenia oddechowe i pracę z głosem\n• Uważność na sygnały ciała\n• Ruch i rozluźnianie napięć\n• Pracę w pozycji stojącej lub na macie\n\nDotyk jest stosowany wyłącznie za wyraźną zgodą, w bezpiecznych granicach terapeutycznych.\n\nPodejście oparte na Core Energetics.\n\nKoszt: 250 zł / 50 min\nAby umówić:\n📞 573 909 822\n📧 recepcja@centrumotulone.pl"
     },
 
     {
@@ -411,7 +411,7 @@
         "czy możemy przyjść razem", "czy mozemy przyjsc razem",
         "czy przyjmujecie pary", "terapia dla dwojga"
       ],
-      "response": "Centrum Otulone oferuje terapię par (60 min, 300 zł).\n\nTerapia par pomaga w:\n• Poprawie komunikacji i zrozumienia w związku\n• Przepracowaniu kryzysu, zdrady lub utraty zaufania\n• Radzeniu sobie z dystansem emocjonalnym\n• Świadomym zakończeniu relacji, jeśli to właściwa droga\n\nSesje odbywają się co dwa tygodnie, w spokojnej, bezpiecznej przestrzeni poza główną siedzibą centrum (szczegóły po umówieniu).\n\nAby umówić:\n📞 573 909 822"
+      "response": "Centrum Otulone oferuje terapię par (60 min, 300 zł).\n\nTerapia par pomaga w:\n• Poprawie komunikacji i zrozumienia w związku\n• Przepracowaniu kryzysu, zdrady lub utraty zaufania\n• Radzeniu sobie z dystansem emocjonalnym\n• Świadomym zakończeniu relacji, jeśli to właściwa droga\n\nSesje odbywają się co dwa tygodnie, w spokojnej, bezpiecznej przestrzeni poza główną siedzibą centrum (szczegóły po umówieniu).\n\nAby umówić:\n📞 573 909 822\n📧 recepcja@centrumotulone.pl"
     },
 
     {
@@ -449,7 +449,7 @@
         "anksjolityki", "benzodiazepiny", "zwolnienie lekarskie", "l4",
         "czy wystawiacie zwolnienia", "czy wystawiacie recepty"
       ],
-      "response": "Centrum Otulone specjalizuje się w psychoterapii — nie przepisujemy leków ani nie wystawiamy zwolnień lekarskich (L4).\n\nTo zadania lekarza psychiatry. Jeśli potrzebujesz konsultacji psychiatrycznej lub farmakoterapii, możemy:\n• Udzielić informacji o tym, gdzie szukać psychiatry\n• W razie potrzeby współpracować z Twoim psychiatrą\n\nPytania? 📞 573 909 822"
+      "response": "Centrum Otulone specjalizuje się w psychoterapii — nie przepisujemy leków ani nie wystawiamy zwolnień lekarskich (L4).\n\nTo zadania lekarza psychiatry. Jeśli potrzebujesz konsultacji psychiatrycznej lub farmakoterapii, możemy:\n• Udzielić informacji o tym, gdzie szukać psychiatry\n• W razie potrzeby współpracować z Twoim psychiatrą\n\nPytania?\n📞 573 909 822\n📧 recepcja@centrumotulone.pl"
     },
 
     {
@@ -530,7 +530,7 @@
         "rodo", "gdpr", "czy ktoś się dowie", "czy ktos sie dowie",
         "czy sesje są nagrywane", "czy sesje sa nagrywane", "nagrywanie"
       ],
-      "response": "Wszystkie spotkania w Centrum Otulone objęte są ścisłą tajemnicą zawodową.\n\nInformacje przekazane podczas sesji są bezpieczne i poufne. Psycholog/psychoterapeuta jest prawnie i etycznie zobowiązany do zachowania tajemnicy zawodowej.\n\nWyjątki od poufności dotyczą wyłącznie sytuacji bezpośredniego zagrożenia życia — jest to standard etyczny i prawny obowiązujący w całej Polsce.\n\nSesje nie są nagrywane.\n\nMasz więcej pytań? 📞 573 909 822"
+      "response": "Wszystkie spotkania w Centrum Otulone objęte są ścisłą tajemnicą zawodową.\n\nInformacje przekazane podczas sesji są bezpieczne i poufne. Psycholog/psychoterapeuta jest prawnie i etycznie zobowiązany do zachowania tajemnicy zawodowej.\n\nWyjątki od poufności dotyczą wyłącznie sytuacji bezpośredniego zagrożenia życia — jest to standard etyczny i prawny obowiązujący w całej Polsce.\n\nSesje nie są nagrywane.\n\nMasz więcej pytań?\n📞 573 909 822\n📧 recepcja@centrumotulone.pl"
     },
 
     {
@@ -544,7 +544,7 @@
         "poczucie pustki", "nic mi nie sprawia radości", "nic mi nie sprawia radosci",
         "depresja poporodowa", "ciągle płaczę", "ciągle placze"
       ],
-      "response": "Rozumiem, że jest Ci teraz trudno.\n\nCentrum Otulone oferuje wsparcie psychologiczne i psychoterapię, które pomagają w stanach depresyjnych, przygnębieniu i braku energii.\n\nNajlepszym pierwszym krokiem jest:\n1. Bezpłatna konsultacja telefoniczna (15 min, 0 zł)\n2. Konsultacja psychologiczna (50 min, 250 zł)\n\nNie musisz radzić sobie z tym sama.\n\nZadzwoń: 📞 573 909 822\nlub napisz: recepcja@centrumotulone.pl"
+      "response": "Rozumiem, że jest Ci teraz trudno.\n\nCentrum Otulone oferuje wsparcie psychologiczne i psychoterapię, które pomagają w stanach depresyjnych, przygnębieniu i braku energii.\n\nNajlepszym pierwszym krokiem jest:\n1. Bezpłatna konsultacja telefoniczna (15 min, 0 zł)\n2. Konsultacja psychologiczna (50 min, 250 zł)\n\nNie musisz radzić sobie z tym sama.\n\n📞 573 909 822\n📧 recepcja@centrumotulone.pl"
     },
 
     {
@@ -557,7 +557,7 @@
         "duszność", "dusznosc", "zawroty głowy ze stresu",
         "lęk społeczny", "lek spoleczny", "agorafobia", "social anxiety"
       ],
-      "response": "Centrum Otulone specjalizuje się w pracy z lękiem i atakami paniki.\n\nW ramach terapii indywidualnej lub psychoterapii z pracą z ciałem możesz pracować nad:\n• Rozumieniem mechanizmów lęku\n• Technikami oddechowymi i regulacją układu nerwowego\n• Stopniowym oswajaniem trudnych sytuacji\n• Przyczynami leżącymi u podłoża lęku\n\nKoszt sesji: 250 zł / 50 min\nBezpłatna konsultacja telefoniczna (0 zł): 15 min\n\nZadzwoń: 📞 573 909 822"
+      "response": "Centrum Otulone specjalizuje się w pracy z lękiem i atakami paniki.\n\nW ramach terapii indywidualnej lub psychoterapii z pracą z ciałem możesz pracować nad:\n• Rozumieniem mechanizmów lęku\n• Technikami oddechowymi i regulacją układu nerwowego\n• Stopniowym oswajaniem trudnych sytuacji\n• Przyczynami leżącymi u podłoża lęku\n\nKoszt sesji: 250 zł / 50 min\nBezpłatna konsultacja telefoniczna (0 zł): 15 min\n\n📞 573 909 822\n📧 recepcja@centrumotulone.pl"
     },
 
     {
@@ -570,7 +570,7 @@
         "potrzebuje przerwy", "nie daję rady", "nie daje rady",
         "przepracowanie", "chroniczne zmęczenie", "chroniczne zmeczenie"
       ],
-      "response": "Centrum Otulone pomaga kobietom w wypaleniu zawodowym i chronicznym wyczerpaniu.\n\nW terapii możesz pracować nad:\n• Rozpoznaniem przyczyn wypalenia\n• Odbudowaniem granic (zawodowych i osobistych)\n• Regeneracją i odzyskaniem energii\n• Zmianą wzorców myślowych (perfekcjonizm, nadodpowiedzialność)\n\nKoszt sesji: 250 zł / 50 min\n\nAby umówić konsultację:\n📞 573 909 822"
+      "response": "Centrum Otulone pomaga kobietom w wypaleniu zawodowym i chronicznym wyczerpaniu.\n\nW terapii możesz pracować nad:\n• Rozpoznaniem przyczyn wypalenia\n• Odbudowaniem granic (zawodowych i osobistych)\n• Regeneracją i odzyskaniem energii\n• Zmianą wzorców myślowych (perfekcjonizm, nadodpowiedzialność)\n\nKoszt sesji: 250 zł / 50 min\n\nAby umówić konsultację:\n📞 573 909 822\n📧 recepcja@centrumotulone.pl"
     },
 
     {
@@ -582,7 +582,7 @@
         "nie radzę sobie w pracy", "nie radze sobie w pracy",
         "praca i rodzina", "równowaga", "rownoWaga", "work-life balance"
       ],
-      "response": "Centrum Otulone oferuje wsparcie w radzeniu sobie ze stresem i trudnymi sytuacjami zawodowymi.\n\nW ramach konsultacji psychologicznej lub psychoterapii możesz pracować nad:\n• Strategiami radzenia sobie ze stresem\n• Granicami i asertywnością w pracy\n• Równowagą między pracą a życiem prywatnym\n• Decyzjami zawodowymi i zmianą\n\nKoszt: 250 zł / 50 min\nZadzwoń: 📞 573 909 822"
+      "response": "Centrum Otulone oferuje wsparcie w radzeniu sobie ze stresem i trudnymi sytuacjami zawodowymi.\n\nW ramach konsultacji psychologicznej lub psychoterapii możesz pracować nad:\n• Strategiami radzenia sobie ze stresem\n• Granicami i asertywnością w pracy\n• Równowagą między pracą a życiem prywatnym\n• Decyzjami zawodowymi i zmianą\n\nKoszt: 250 zł / 50 min\n\n📞 573 909 822\n📧 recepcja@centrumotulone.pl"
     },
 
     {
@@ -595,7 +595,7 @@
         "nie zasługuję", "nie zasluguje", "nie daję rady",
         "poczucie bezsensowności", "poczucie bezsensonowsci"
       ],
-      "response": "Centrum Otulone pomaga kobietom w pracy z niską samooceną, poczuciem winy i nadmierną samokrytyką.\n\nW terapii możesz stopniowo:\n• Odkrywać źródła trudnych przekonań o sobie\n• Budować zdrowy, współczujący kontakt ze sobą\n• Zmniejszać wpływ perfekcjonizmu i wewnętrznego krytyka\n\nKoszt sesji: 250 zł / 50 min\n\nZacznij od bezpłatnej konsultacji telefonicznej (0 zł):\n📞 573 909 822"
+      "response": "Centrum Otulone pomaga kobietom w pracy z niską samooceną, poczuciem winy i nadmierną samokrytyką.\n\nW terapii możesz stopniowo:\n• Odkrywać źródła trudnych przekonań o sobie\n• Budować zdrowy, współczujący kontakt ze sobą\n• Zmniejszać wpływ perfekcjonizmu i wewnętrznego krytyka\n\nKoszt sesji: 250 zł / 50 min\n\nZacznij od bezpłatnej konsultacji telefonicznej (0 zł):\n📞 573 909 822\n📧 recepcja@centrumotulone.pl"
     },
 
     {
@@ -618,7 +618,7 @@
         "koszmary", "koszmary nocne", "za mało snu", "za malo snu",
         "zmęczenie mimo snu", "zmeczenie mimo snu", "insomnia"
       ],
-      "response": "Problemy ze snem często mają podłoże emocjonalne i mogą być objawem stresu, lęku, depresji lub traumy.\n\nCentrum Otulone może pomóc poprzez:\n• Psychoterapię adresującą przyczyny bezsenności\n• Pracę z lękiem i napięciem\n• Techniki regulacji układu nerwowego\n\nKoszt sesji: 250 zł / 50 min\n\nZacznij od bezpłatnej konsultacji telefonicznej (0 zł):\n📞 573 909 822"
+      "response": "Problemy ze snem często mają podłoże emocjonalne i mogą być objawem stresu, lęku, depresji lub traumy.\n\nCentrum Otulone może pomóc poprzez:\n• Psychoterapię adresującą przyczyny bezsenności\n• Pracę z lękiem i napięciem\n• Techniki regulacji układu nerwowego\n\nKoszt sesji: 250 zł / 50 min\n\nZacznij od bezpłatnej konsultacji telefonicznej (0 zł):\n📞 573 909 822\n📧 recepcja@centrumotulone.pl"
     },
 
     {
@@ -630,7 +630,7 @@
         "rodzenstwo", "granice w relacjach", "trudna relacja",
         "samotność", "samotnosc", "izolacja", "brak bliskich relacji"
       ],
-      "response": "Centrum Otulone pomaga kobietom w pracy nad relacjami — rodzinnymi, partnerskimi, przyjaźniami.\n\nW terapii możesz:\n• Rozumieć wzorce relacyjne wyniesione z domu\n• Budować zdrowe granice\n• Pracować nad komunikacją i bliskością\n• Radzić sobie z samotnością i izolacją\n\nKoszt sesji: 250 zł / 50 min\nAby umówić: 📞 573 909 822"
+      "response": "Centrum Otulone pomaga kobietom w pracy nad relacjami — rodzinnymi, partnerskimi, przyjaźniami.\n\nW terapii możesz:\n• Rozumieć wzorce relacyjne wyniesione z domu\n• Budować zdrowe granice\n• Pracować nad komunikacją i bliskością\n• Radzić sobie z samotnością i izolacją\n\nKoszt sesji: 250 zł / 50 min\n\nAby umówić:\n📞 573 909 822\n📧 recepcja@centrumotulone.pl"
     },
 
     {
@@ -641,7 +641,7 @@
         "misja", "filozofia", "podejście", "podejscie",
         "opis centrum", "informacje o centrum", "o was", "wasze centrum"
       ],
-      "response": "Centrum Terapii dla Kobiet Otulone to miejsce stworzone z myślą o kobietach, które chcą zadbać o swoje zdrowie psychiczne i emocjonalne.\n\nCentrum łączy psychoterapię, pracę z ciałem i techniki uważności w holistycznym podejściu do dobrostanu.\n\nObszary wsparcia:\n• Emocje, stres i wypalenie\n• Relacje i intymność\n• Trauma i trudne doświadczenia\n• Ciało i zaburzenia odżywiania\n• Neuroróznorodność (ADHD)\n• Seksualność i bliskość\n\n📍 ul. Kartuska 426b/8, 80-125 Gdańsk – Jasień\n📞 573 909 822\n🌐 centrumotulone.pl"
+      "response": "Centrum Terapii dla Kobiet Otulone to miejsce stworzone z myślą o kobietach, które chcą zadbać o swoje zdrowie psychiczne i emocjonalne.\n\nCentrum łączy psychoterapię, pracę z ciałem i techniki uważności w holistycznym podejściu do dobrostanu.\n\nObszary wsparcia:\n• Emocje, stres i wypalenie\n• Relacje i intymność\n• Trauma i trudne doświadczenia\n• Ciało i zaburzenia odżywiania\n• Neuroróznorodność (ADHD)\n• Seksualność i bliskość\n\n📍 ul. Kartuska 426b/8, 80-125 Gdańsk – Jasień\n📞 573 909 822\n📧 recepcja@centrumotulone.pl\n🌐 centrumotulone.pl"
     },
 
     {
@@ -678,7 +678,7 @@
         "kilka minut za późno", "za późno", "za pozno",
         "jak dojadę później", "przyjdę za późno", "przyjde za pozno"
       ],
-      "response": "Jeśli spóźnisz się na wizytę, sesja mimo to zakończy się o zaplanowanej godzinie.\n\nKoszt sesji pozostaje bez zmian, mimo krótszego czasu trwania.\n\nGdy wiesz, że się spóźnisz, najlepiej zadzwoń wcześniej do recepcji:\n📞 573 909 822"
+      "response": "Jeśli spóźnisz się na wizytę, sesja mimo to zakończy się o zaplanowanej godzinie.\n\nKoszt sesji pozostaje bez zmian, mimo krótszego czasu trwania.\n\nGdy wiesz, że się spóźnisz, najlepiej zadzwoń wcześniej do recepcji:\n📞 573 909 822\n📧 recepcja@centrumotulone.pl"
     },
 
     {
@@ -703,7 +703,7 @@
         "co to jest kontrakt terapeutyczny", "co to kontrakt terapeutyczny",
         "co to jest kontrakt", "czym jest kontrakt terapeutyczny"
       ],
-      "response": "Na początku współpracy terapeutka przedstawia kontrakt terapeutyczny — dokument opisujący zasady współpracy.\n\nKontrakt zawiera m.in.:\n• Zasady poufności i ich wyjątki\n• Politykę odwoływania wizyt (48h bez opłat)\n• Prawa i obowiązki obu stron\n• Cele i ramy terapii\n\nPodpisanie kontraktu potwierdza świadome uczestnictwo w terapii i jest standardem etycznym.\n\nMasz pytania? 📞 573 909 822"
+      "response": "Na początku współpracy terapeutka przedstawia kontrakt terapeutyczny — dokument opisujący zasady współpracy.\n\nKontrakt zawiera m.in.:\n• Zasady poufności i ich wyjątki\n• Politykę odwoływania wizyt (48h bez opłat)\n• Prawa i obowiązki obu stron\n• Cele i ramy terapii\n\nPodpisanie kontraktu potwierdza świadome uczestnictwo w terapii i jest standardem etycznym.\n\nMasz pytania?\n📞 573 909 822\n📧 recepcja@centrumotulone.pl"
     },
 
     {
@@ -717,7 +717,7 @@
         "psychiatra czy psycholog", "psycholog czy psychoterapeuta",
         "czym zajmuje się psycholog", "czym zajmuje sie psycholog"
       ],
-      "response": "Trzy podstawowe specjalizacje w zdrowiu psychicznym:\n\n• Psycholożka — diagnozuje, prowadzi konsultacje i wsparcie. Nie przepisuje leków.\n\n• Psychoterapeutka — prowadzi terapię (psychoterapię) zgodnie z wybranym nurtem (np. CBT, psychodynamicznym). Często jest też psychologiem.\n\n• Psychiatra — lekarz medycyny. Przepisuje leki, wystawia zwolnienia lekarskie i recepty.\n\nW Centrum Otulone pracują psycholożki i psychoterapeutki. Psychiatra jest poza centrum.\n\nNie wiesz, kto Ci będzie potrzebny? Zadzwoń:\n📞 573 909 822"
+      "response": "Trzy podstawowe specjalizacje w zdrowiu psychicznym:\n\n• Psycholożka — diagnozuje, prowadzi konsultacje i wsparcie. Nie przepisuje leków.\n\n• Psychoterapeutka — prowadzi terapię (psychoterapię) zgodnie z wybranym nurtem (np. CBT, psychodynamicznym). Często jest też psychologiem.\n\n• Psychiatra — lekarz medycyny. Przepisuje leki, wystawia zwolnienia lekarskie i recepty.\n\nW Centrum Otulone pracują psycholożki i psychoterapeutki. Psychiatra jest poza centrum.\n\nNie wiesz, kto Ci będzie potrzebny?\n📞 573 909 822\n📧 recepcja@centrumotulone.pl"
     },
 
     {
@@ -731,7 +731,7 @@
         "czy to zobowiązanie", "czy muszę kontynuować",
         "mogę odejść z terapii", "przerwa w terapii"
       ],
-      "response": "Tak — możesz zakończyć terapię w dowolnym momencie. To nie jest zobowiązanie na całe życie.\n\nW przypadku terapii długoterminowej zaleca się właściwe zamknięcie procesu — ostatnie sesje poświęcone są podsumowaniu pracy i świadomemu zakończeniu współpracy.\n\nJeśli rozważasz zakończenie lub przerwę, warto porozmawiać o tym z terapeutką — to ważny temat, który można omówić wspólnie.\n\nPytania? 📞 573 909 822"
+      "response": "Tak — możesz zakończyć terapię w dowolnym momencie. To nie jest zobowiązanie na całe życie.\n\nW przypadku terapii długoterminowej zaleca się właściwe zamknięcie procesu — ostatnie sesje poświęcone są podsumowaniu pracy i świadomemu zakończeniu współpracy.\n\nJeśli rozważasz zakończenie lub przerwę, warto porozmawiać o tym z terapeutką — to ważny temat, który można omówić wspólnie.\n\nPytania?\n📞 573 909 822\n📧 recepcja@centrumotulone.pl"
     }
 
   ],
