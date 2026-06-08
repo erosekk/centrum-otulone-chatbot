@@ -4,7 +4,7 @@
       "samobójstwo", "samobójczy", "samobojstwo", "samobojczy",
       "zabić się", "zabic sie", "chcę umrzeć", "chce umrzec",
       "nie chcę żyć", "nie chce zyc", "nie chcę już żyć", "nie chce juz zyc",
-      "samookaleczenie", "samoaktualizacja",
+      "samookaleczenie",
       "odebrać sobie życie", "odebrac sobie zycie",
       "skończyć z życiem", "skonczyc z zyciem",
       "nie mam po co żyć", "nie mam po co zyc",
@@ -17,14 +17,13 @@
       "chcę zniknąć", "chce zniknac",
       "chcę być martwa", "chce byc martwa",
       "skrzywdzić siebie", "skrzywdzic siebie",
-      "krzywdzę siebie", "krzywdzic siebie",
+      "krzywdzę siebie",
       "sobie krzywdę", "sobie krzywde",
       "zrobię sobie krzywdę", "zrobie sobie krzywde",
       "chcę się skrzywdzić", "chce sie skrzywdzic",
       "zranić siebie", "zranic siebie",
       "skaleczyć", "skaleczyc",
       "skaleczyć się", "skaleczyc sie",
-      "skaleczyć siebie", "skaleczyc siebie",
       "ciąć się", "ciac sie", "się ciąć", "sie ciac",
       "natnąć się", "natnac sie",
       "przemoc wobec siebie",
@@ -53,8 +52,10 @@
     {
       "id": "powitanie",
       "keywords": [
-        "cześć", "czesc", "hej", "hejo", "witaj", "witam", "dzień dobry", "dzien dobry",
-        "dobry wieczór", "dobry wieczor", "dobranoc", "siema", "hello", "hi", "good morning"
+        "cześć", "czesc", "hej", "hejo", "hejka", "witaj", "witam", "dzień dobry", "dzien dobry",
+        "dobry wieczór", "dobry wieczor", "dobranoc", "siema", "hello", "hi",
+        "dzień dobry pani", "dzien dobry pani", "dobry wieczor pani",
+        "cześć pani", "czesc pani"
       ],
       "response": "Dzień dobry! Cieszę się, że piszesz.\n\nMogę pomóc w sprawach dotyczących:\n• cennika i kosztów sesji\n• umawiania i odwoływania wizyt\n• dostępnych usług i specjalistek\n• adresu, dojazdu i kontaktu\n• pierwszej wizyty i tego, czego się spodziewać\n\nO co chciałabyś zapytać?"
     },
@@ -64,7 +65,10 @@
       "keywords": [
         "dziękuję", "dziekuje", "dzieki", "dzięki", "thx", "thank",
         "super", "świetnie", "swietnie", "pomocne", "pomogłaś", "pomoglas",
-        "rewelacja", "doskonale", "idealnie", "ok dzięki", "ok dzieki"
+        "rewelacja", "doskonale", "idealnie", "ok dzięki", "ok dzieki",
+        "bardzo dziękuję", "bardzo dziekuje", "dzięki bardzo", "dzieki bardzo",
+        "to wszystko co chciałam wiedzieć", "to wszystko co chcialam wiedziec",
+        "to mi wystarczy", "mam już wszystko", "mam juz wszystko"
       ],
       "response": "Cieszę się, że mogłam pomóc!\n\nJeśli masz więcej pytań — chętnie odpowiem. Do zobaczenia w Centrum Otulone!"
     },
@@ -73,7 +77,9 @@
       "id": "pozegnanie",
       "keywords": [
         "do widzenia", "pa pa", "żegnaj", "zegnaj", "na razie",
-        "do zobaczenia", "koniec", "bye", "żegnam", "goodbye"
+        "do zobaczenia", "koniec", "bye", "żegnam", "goodbye",
+        "do następnego razu", "do nastepnego razu", "do usłyszenia", "do uslyszenia",
+        "dobranoc pani", "do widzenia pani"
       ],
       "response": "Do widzenia! Jeśli będziesz mieć pytania, zawsze możesz wrócić.\n\nZapraszamy do Centrum Otulone."
     },
@@ -84,8 +90,12 @@
         "cena", "ceny", "cennik", "ile kosztuje", "ile kosztuja", "koszt", "koszty",
         "opłata", "oplata", "ile płacę", "ile place", "ile wynosi",
         "stawka", "stawki", "jaka cena", "jaki koszt", "co kosztuje",
-        "za ile", "jakie są ceny", "jakie sa ceny", "przybliżona cena",
-        "ceny usług", "koszt sesji", "ile kosztuje sesja", "ile kosztuje wizyta"
+        "za ile", "jakie są ceny", "jakie sa ceny",
+        "ceny sesji", "ceny wizyt", "ile kosztuje sesja", "ile kosztuje wizyta",
+        "ile to kosztuje", "ile płaci się", "ile placi sie",
+        "ile zapłacę", "ile zaplace", "jak drogo", "drogo", "drogie", "tanie",
+        "przybliżona cena", "przyblizona cena", "lista cen",
+        "ile kosztuje u was", "ile kosztuje konsultacja", "ile kosztuje spotkanie"
       ],
       "response": "Cennik Centrum Otulone:\n\n• Bezpłatna konsultacja telefoniczna (15 min) — 0 zł\n• Konsultacja psychologiczna (50 min) — 250 zł\n• Psychoterapia indywidualna (50 min) — 250 zł\n• Psychoterapia z pracą z ciałem (50 min) — 250 zł\n• Terapia traumy (50 min) — 250 zł\n• Konsultacja seksuologiczna (50 min) — 250 zł\n• Diagnoza ADHD DIVA5 (pakiet 3 sesji) — 960 zł\n• Terapia matki i dorosłej córki (50 min) — 350 zł\n• Terapia par (60 min) — 300 zł\n• Zaświadczenie o terapii — 50 zł\n\nMasz pytania?\n📞 573 909 822\n📧 recepcja@centrumotulone.pl"
     },
@@ -93,10 +103,13 @@
     {
       "id": "platnosc",
       "keywords": [
-        "płatność", "platnosc", "jak płacić", "jak placic", "forma płatności",
+        "płatność", "platnosc", "jak płacić", "jak placic", "forma płatności", "formy platnosci",
         "gotówka", "gotowka", "przelew", "karta", "blik",
         "jak zapłacić", "jak zaplacic", "faktura", "paragon", "rachunek",
-        "płacę", "place", "zapłacę", "zaplace", "rozliczenie"
+        "płacę", "place", "zapłacę", "zaplace", "rozliczenie",
+        "czy płacę z góry", "czy place z gory", "kiedy płacę", "kiedy place",
+        "czy można płacić kartą", "czy mozna placic karta",
+        "czy jest blik", "płatność online", "platnosc online"
       ],
       "response": "W kwestii dostępnych form płatności prosimy o bezpośredni kontakt z recepcją — udzielą aktualnych informacji.\n\n📞 573 909 822\n📧 recepcja@centrumotulone.pl"
     },
@@ -106,7 +119,10 @@
       "keywords": [
         "faktura", "fakturę", "faktury", "vat", "nip", "działalność",
         "firma", "odliczyć", "odliczenie", "pit", "koszty uzyskania",
-        "zaświadczenie", "zaswiadczenie", "potwierdzenie płatności", "potwierdzenie platnosci"
+        "zaświadczenie", "zaswiadczenie", "potwierdzenie płatności", "potwierdzenie platnosci",
+        "czy wystawiacie faktury", "czy wystawiacie faktury vat",
+        "potrzebuję faktury", "potrzebuje faktury", "faktura za sesję",
+        "rozliczenie podatkowe", "odliczyć od podatku"
       ],
       "response": "Centrum Otulone wystawia zaświadczenie o odbytej terapii (koszt 50 zł).\n\nW kwestii faktury lub innych dokumentów rozliczeniowych prosimy skontaktować się bezpośrednio z recepcją:\n\n📞 573 909 822\n📧 recepcja@centrumotulone.pl"
     },
@@ -117,7 +133,11 @@
         "nfz", "nfz-u", "ubezpieczenie", "refundacja", "refundowane",
         "bezpłatna terapia", "bezplatna terapia", "fundusz zdrowia",
         "bez opłat", "prywatnie", "prywatna", "na funduszu",
-        "czy jest na nfz", "czy przyjmujecie nfz"
+        "czy jest na nfz", "czy przyjmujecie nfz",
+        "czy jest refundacja", "czy jest dofinansowanie",
+        "czy płaci nfz", "czy placi nfz",
+        "czy mogę bez opłat", "czy mozna bezplatnie",
+        "czy to jest prywatna klinika", "prywatny gabinet"
       ],
       "response": "Centrum Otulone działa jako prywatna placówka — nie realizuje świadczeń w ramach NFZ.\n\nWszystkie usługi są odpłatne zgodnie z cennikiem. Jeśli zależy Ci na refundowanej pomocy psychologicznej, możemy polecić kontakt z publicznymi przychodniami zdrowia psychicznego.\n\nMasz pytania?\n📞 573 909 822\n📧 recepcja@centrumotulone.pl"
     },
@@ -128,7 +148,11 @@
         "kontakt", "telefon", "numer", "zadzwonić", "zadzwonic", "email",
         "e-mail", "mail", "napisać", "napisac", "jak się skontaktować",
         "jak sie skontaktowac", "dane kontaktowe", "recepcja", "napisz",
-        "zadzwoń", "zadzwon", "numer telefonu", "formularz kontaktowy"
+        "zadzwoń", "zadzwon", "numer telefonu", "formularz kontaktowy",
+        "jak się z wami skontaktować", "jak sie z wami skontaktowac",
+        "jak do was napisać", "jak do was napisac",
+        "jak do was zadzwonić", "jak do was zadzwonic",
+        "kontakt z centrum", "dane do kontaktu", "jak się odezwać"
       ],
       "response": "Dane kontaktowe Centrum Otulone:\n\n📞 Telefon: 573 909 822\n📧 E-mail: recepcja@centrumotulone.pl\n🌐 Formularz: centrumotulone.pl/kontakt\n\nRecepcja czynna:\nPoniedziałek – piątek: 8:00 – 13:00 i 16:00 – 21:00\n(przerwa: 13:00 – 16:00)"
     },
@@ -139,7 +163,14 @@
         "adres", "gdzie", "lokalizacja", "gdzie się znajduje", "gdzie sie znajduje",
         "jak dojechać", "jak dojechac", "dojazd", "mapa", "ulica",
         "jasień", "jasien", "kartuska", "gdzie jest", "siedziba",
-        "gabinet", "jak trafić", "jak trafic", "gdzie mnie przyjmą", "gdzie mnie przyjma"
+        "gabinet", "jak trafić", "jak trafic",
+        "gdzie was znajdę", "gdzie was znajde",
+        "jak do was trafić", "jak do was trafic",
+        "gdzie jesteście", "gdzie jestescie",
+        "gdzie mnie przyjmą", "gdzie mnie przyjma",
+        "pod jakim adresem", "pod jakim numerem",
+        "jaka ulica", "które piętro", "ktore pietro",
+        "gdzie is centrum otulone"
       ],
       "response": "Centrum Otulone mieści się pod adresem:\n\n📍 ul. Kartuska 426b/8\n    80-125 Gdańsk – Jasień\n\nW razie pytań o dojazd lub lokalizację:\n📞 573 909 822\n📧 recepcja@centrumotulone.pl"
     },
@@ -150,7 +181,12 @@
         "parking", "zaparkować", "zaparkowac", "bus", "autobus", "tramwaj",
         "komunikacja", "jak dojadę", "jak dojade", "pieszo", "dojeżdżam",
         "dojezdze", "skm", "pkm", "kolej", "pociąg", "pociag",
-        "rower", "taxi", "uber", "jak dostać się", "jak dostac sie"
+        "rower", "taxi", "uber", "jak dostać się", "jak dostac sie",
+        "jak dojechać komunikacją", "jak dojechac komunikacja",
+        "czy jest parking", "gdzie zaparkować", "gdzie zaparkowac",
+        "jak do was dojechać", "jak do was dojechac",
+        "jakim autobusem", "jaki tramwaj", "komunikacja miejska",
+        "czy daleko od centrum", "czy blisko przystanku"
       ],
       "response": "Centrum Otulone mieści się przy ul. Kartuskiej 426b/8 w gdańskim Jaśniu.\n\nW kwestii parkingu i dojazdu komunikacją miejską prosimy o kontakt z recepcją — chętnie podpowiedzą najdogodniejszą drogę:\n\n📞 573 909 822\n📧 recepcja@centrumotulone.pl"
     },
@@ -163,7 +199,19 @@
         "czy dziś", "czy dzis", "pn", "wt", "sr", "śr", "czw", "pt",
         "poniedziałek", "poniedzialek", "wtorek", "środa", "sroda",
         "czwartek", "piątek", "piatek", "weekend", "sobota", "niedziela",
-        "od kiedy do kiedy", "rano", "wieczorem"
+        "od kiedy do kiedy", "rano", "wieczorem",
+        "o której otwieracie", "o ktorej otwieracie",
+        "do której jesteście", "do ktorej jestescie",
+        "od której godziny", "od ktorej godziny",
+        "o której mogę zadzwonić", "o ktorej moge zadzwonic",
+        "kiedy mogę zadzwonić", "kiedy moge zadzwonic",
+        "godziny recepcji", "kiedy recepcja czynna",
+        "o której godzinie otwieracie", "czy w sobotę przyjmujecie",
+        "czy w sobote przyjmujecie", "czy pracujecie w weekend",
+        "czy w weekend czynne", "do której pracujecie",
+        "czy w sobotę pracujecie", "czy w sobote pracujecie",
+        "czy w niedzielę pracujecie", "czy w niedziele pracujecie",
+        "w sobotę pracujecie", "w sobote pracujecie"
       ],
       "response": "Godziny pracy recepcji:\n\n⏰ Poniedziałek – piątek:\n   8:00 – 13:00 oraz 16:00 – 21:00\n   (przerwa: 13:00 – 16:00)\n\n❌ Sobota i niedziela: nieczynne\n\nW pilnych sprawach:\n📞 573 909 822\n📧 recepcja@centrumotulone.pl"
     },
@@ -180,7 +228,16 @@
         "zapisuję się", "zapisuje sie", "chcę się zapisać", "chce sie zapisac",
         "zapis online", "rezerwacja online", "chciałabym się umówić",
         "jak mogę się umówić", "chcę się umówić", "kiedy mogę przyjść",
-        "chcę przyjść", "chce przyjsc"
+        "chcę przyjść", "chce przyjsc",
+        "rezerwacja", "jak zarezerwować wizytę", "jak zarezerwowac wizyte",
+        "jak zarezerwować", "jak zarezerwowac",
+        "mogę się zapisać", "moge sie zapisac",
+        "zapis do specjalistki", "zapis do psychologa",
+        "chciałabym przyjść", "chciałabym skorzystać",
+        "chciałabym przyjsc", "chciałabym skorzystac",
+        "jak umówić wizytę", "jak umowic wizyte",
+        "jak zapisać się na wizytę", "jak zapisac sie na wizyte",
+        "umówienie wizyty", "umowienie wizyty"
       ],
       "response": "Aby umówić wizytę w Centrum Otulone:\n\n1. 📞 Zadzwoń: 573 909 822\n   (pon–pt, 8:00–21:00)\n\n2. 📧 Napisz e-mail: recepcja@centrumotulone.pl\n\n3. 🌐 Formularz na stronie: centrumotulone.pl/kontakt\n\nDla nowych pacjentek dostępna jest bezpłatna 15-minutowa konsultacja telefoniczna (0 zł) — idealny pierwszy krok bez żadnych zobowiązań."
     },
@@ -191,7 +248,12 @@
         "bezpłatna konsultacja", "bezplatna konsultacja", "darmowa konsultacja",
         "bezpłatne", "bezplatne", "za darmo", "gratis", "bez opłat",
         "konsultacja telefoniczna", "15 minut", "15 min", "darmowe spotkanie",
-        "bezpłatne spotkanie", "czy jest coś darmowego", "czy jest cos darmowego"
+        "bezpłatne spotkanie", "czy jest coś darmowego", "czy jest cos darmowego",
+        "czy jest coś bezpłatnego", "czy jest cos bezplatnego",
+        "czy mogę zadzwonić bezpłatnie", "czy moge zadzwonic bezplatnie",
+        "bezpłatna rozmowa", "bezplatna rozmowa", "darmowa rozmowa",
+        "konsultacja za darmo", "pierwsza rozmowa bezpłatna",
+        "czy pierwsza wizyta jest bezpłatna", "czy pierwsza wizyta jest bezplatna"
       ],
       "response": "Tak — Centrum Otulone oferuje bezpłatną 15-minutową konsultację telefoniczną (0 zł).\n\nJest to idealna okazja, aby:\n• poznać centrum i specjalistkę\n• opowiedzieć krótko o swojej sytuacji\n• sprawdzić, czy oferta odpowiada Twoim potrzebom\n• zadać pierwsze pytania\n\nAby umówić bezpłatną konsultację:\n📞 573 909 822\n📧 recepcja@centrumotulone.pl\n\nTo nic nie kosztuje i do niczego nie zobowiązuje."
     },
@@ -201,14 +263,26 @@
       "keywords": [
         "odwołać", "odwolac", "odwołanie", "odwolanie", "anulować", "anuloac",
         "anulowanie", "zmiana terminu", "przełożyć", "przelozyc",
-        "rezygnacja", "rezygnować", "zrezygnować", "cancel",
+        "rezygnacja z wizyty", "zrezygnować z wizyty", "cancel",
         "nie przyjdę", "nie przyjde", "zmienić termin", "zmienic termin",
         "odwołać wizytę", "odwolac wizyte", "przekładam", "przekladam",
         "nie mogę przyjść", "nie moge przyjsc", "czy mogę odwołać", "czy moge odwolac",
         "nie dam rady", "nie dam rady przyjść", "nie dam rady przyjsc",
         "zmienię termin", "zmienie termin", "muszę odwołać", "musze odwolac",
         "chcę przełożyć", "chce przelozyc", "przekładam wizytę", "przekladam wizyte",
-        "nie mogę być", "nie moge byc"
+        "nie mogę być", "nie moge byc",
+        "nie pojawię się", "nie pojawię sie", "nie pojawię sie na wizycie",
+        "nie stawię się", "nie stawie sie",
+        "co jak nie przyjdę", "co jesli nie przyjde",
+        "nie będę mogła przyjść", "nie bede mogla przyjsc",
+        "muszę anulować spotkanie", "musze anuloac spotkanie",
+        "jak odwołać wizytę", "jak odwolac wizyte",
+        "jak anulować wizytę", "jak anuloac wizyte",
+        "jak zmienić termin", "jak zmienic termin",
+        "jak przełożyć wizytę", "jak przelozyc wizyte",
+        "chcę anulować", "chce anuloac",
+        "czy można odwołać", "czy mozna odwolac",
+        "spóźnię się", "spoznie sie"
       ],
       "response": "Jeśli potrzebujesz odwołać lub przełożyć wizytę, najlepiej skontaktuj się z recepcją możliwie jak najwcześniej.\n\nWizytę można bezpłatnie odwołać lub przełożyć najpóźniej 48 godzin przed umówionym terminem. W przypadku późniejszego odwołania wizyta jest pełnopłatna.\n\n📞 Telefon: 573 909 822\n📧 E-mail: recepcja@centrumotulone.pl\n\nRecepcja czynna: pon–pt, 8:00–21:00"
     },
@@ -223,7 +297,10 @@
         "regulamin", "zasady wizyt", "48 godzin", "48h", "48 h",
         "kiedy mogę bezpłatnie odwołać", "kiedy moge bezplatnie odwolac",
         "czy muszę płacić za odwołaną", "czy musze placic za odwolana",
-        "opłata za odwołanie", "oplata za odwolanie"
+        "opłata za odwołanie", "oplata za odwolanie",
+        "czy płacę jeśli nie przyjdę", "czy place jesli nie przyjde",
+        "co grozi za niestawiennictwo", "nieobecność na wizycie",
+        "kara za odwołanie", "czy jest opłata za anulowanie"
       ],
       "response": "Zasady odwoływania wizyt w Centrum Otulone:\n\n• Bezpłatne odwołanie: najpóźniej 48 godzin przed terminem\n• Odwołanie po upływie 48 h: wizyta jest pełnopłatna (100% opłaty)\n\nZarezerwowany czas i przygotowanie specjalistki uzasadniają tę zasadę — wcześniejsze odwołanie pozwala udostępnić termin innej pacjentce.\n\nAby odwołać wizytę:\n📞 573 909 822\n📧 recepcja@centrumotulone.pl\n\nRecepcja czynna: pon–pt, 8:00–21:00"
     },
@@ -238,7 +315,10 @@
         "50 minut", "60 minut", "godzina sesji", "czas wizyty",
         "ile minut trwa", "jak długo trwa sesja", "jak dlugo trwa sesja",
         "jak długo trwa spotkanie", "jak dlugo trwa spotkanie",
-        "jak długo trwa wizyta", "jak dlugo trwa wizyta"
+        "jak długo trwa wizyta", "jak dlugo trwa wizyta",
+        "jak długa jest sesja", "jak dluga jest sesja",
+        "ile czasu trwa", "czas trwania wizyty",
+        "jak długo trwa jedno spotkanie", "ile godzin trwa sesja"
       ],
       "response": "Czas trwania sesji w Centrum Otulone:\n\n• Większość sesji (konsultacja, terapia): 50 minut\n• Terapia par: 60 minut\n• Bezpłatna konsultacja telefoniczna (0 zł): 15 minut\n• Diagnoza ADHD DIVA5: 3 sesje × 50 minut\n\nMasz pytania o konkretną usługę?\n📞 573 909 822\n📧 recepcja@centrumotulone.pl"
     },
@@ -256,7 +336,10 @@
         "krótkoterminowa terapia", "krotkoterminowa terapia",
         "ile czasu na terapię", "ile czasu na terapie",
         "jak długo się chodzi na terapię", "jak dlugo sie chodzi na terapie",
-        "ile sesji potrzebuję", "ile sesji potrzebuje", "jak wiele spotkań"
+        "ile sesji potrzebuję", "ile sesji potrzebuje", "jak wiele spotkań",
+        "kiedy zakończymy terapię", "kiedy zakonczymy terapie",
+        "na jak długo się umawiamy", "na ile sesji",
+        "ile czasu zajmie terapia", "czy terapia długo trwa"
       ],
       "response": "Czas trwania całej terapii jest bardzo indywidualny i zależy od Twoich celów oraz potrzeb.\n\nOrientacyjne ramy:\n• Konsultacje diagnostyczne: ok. 3 spotkań\n• Krótkoterminowe wsparcie: 6–12 sesji\n• Terapia krótkoterminowa: 3–6 miesięcy\n• Terapia długoterminowa: 6 miesięcy i więcej\n\nCzęstotliwość spotkań jest ustalana indywidualnie — zazwyczaj raz w tygodniu.\n\nMożesz też skorzystać z jednorazowej konsultacji, bez zobowiązania do dalszej terapii.\n\nWięcej informacji:\n📞 573 909 822\n📧 recepcja@centrumotulone.pl"
     },
@@ -268,7 +351,12 @@
         "raz w tygodniu", "dwa razy w tygodniu", "regularność", "regularnosc",
         "częstotliwość", "czestotliwosc", "kiedy następna sesja", "kiedy nastepna sesja",
         "spotkania co tydzień", "spotkania co tydzien", "jak regularnie",
-        "co ile czasu", "jak często spotykamy się", "jak czesto spotykamy sie"
+        "co ile czasu", "jak często spotykamy się", "jak czesto spotykamy sie",
+        "jak często trzeba chodzić", "jak czesto trzeba chodzic",
+        "czy trzeba co tydzień", "czy trzeba co tydzien",
+        "co ile spotykamy się", "co ile spotykamy sie",
+        "czy można chodzić rzadziej", "czy mozna chodzic rzadziej",
+        "jak często sesje", "ile razy na miesiąc", "ile razy na miesiac"
       ],
       "response": "Sesje w Centrum Otulone odbywają się zazwyczaj raz w tygodniu — taka częstotliwość jest zalecana dla najlepszych efektów terapii.\n\nW sytuacjach kryzysowych lub przy terapii psychodynamicznej spotkania mogą odbywać się dwa razy w tygodniu.\n\nCzęstotliwość jest ustalana indywidualnie ze specjalistką, zależnie od Twoich potrzeb i dostępności terminów.\n\nPytania?\n📞 573 909 822\n📧 recepcja@centrumotulone.pl"
     },
@@ -281,8 +369,15 @@
         "co mnie czeka", "jak to działa", "jak to dziala",
         "nie wiem od czego zacząć", "nie wiem od czego zaczac",
         "zaczynam terapię", "zaczynam terapie", "pierwszy raz",
-        "co przygotować", "co przygotowac", "co przynieść",
-        "co przyniosc", "jak się przygotować", "jak sie przygotowac"
+        "co przygotować", "co przygotowac", "co przynieść", "co przyniosc",
+        "jak się przygotować", "jak sie przygotowac",
+        "co się dzieje na pierwszej wizycie", "co sie dzieje na pierwszej wizycie",
+        "jak wygląda pierwsza wizyta", "jak wyglada pierwsza wizyta",
+        "co mam zrobić na pierwszą wizytę", "co mam zrobic na pierwsza wizyte",
+        "czego można się spodziewać", "czego mozna sie spodziewac",
+        "jak wygląda pierwsze spotkanie", "jak wyglada pierwsze spotkanie",
+        "co mnie czeka na wizycie", "jak przebiega wizyta",
+        "jak przebiega konsultacja", "co się dzieje podczas sesji"
       ],
       "response": "Pierwsza wizyta to konsultacja psychologiczna (50 min).\n\nCo się dzieje podczas pierwszego spotkania:\n• Poznasz swoją specjalistkę w bezpiecznej, komfortowej atmosferze\n• Opiszesz swoje trudności i oczekiwania we własnym tempie\n• Wspólnie określicie obszary i cele dalszej pracy\n• Dowiesz się, jakie kolejne kroki są zalecane\n\nNie musisz się specjalnie przygotowywać — po prostu przyjdź.\n\nPrzed pierwszą wizytą możesz skorzystać z bezpłatnej 15-minutowej konsultacji telefonicznej (0 zł).\n\nAby umówić:\n📞 573 909 822\n📧 recepcja@centrumotulone.pl"
     },
@@ -295,7 +390,16 @@
         "gdzie zacząć", "gdzie zaczac", "nie wiem jak zacząć", "nie wiem jak zaczac",
         "od czego się zaczyna", "od czego sie zaczyna",
         "co mam zrobić żeby", "co mam zrobic zeby",
-        "jak skorzystać", "jak skorzystac"
+        "jak skorzystać", "jak skorzystac",
+        "jak zacząć terapię", "jak zaczac terapie",
+        "jak skorzystać z pomocy", "jak skorzystac z pomocy",
+        "jak się zgłosić", "jak sie zglosic",
+        "jak mogę zacząć", "jak moge zaczac",
+        "co muszę zrobić żeby przyjść", "co musze zrobic zeby przyjsc",
+        "jak umówić się po raz pierwszy", "jak umowic sie po raz pierwszy",
+        "co zrobić żeby zacząć terapię", "co zrobic zeby zaczac terapie",
+        "jak się dostać do centrum", "jak sie dostac do centrum",
+        "chcę zacząć terapię", "chce zaczac terapie"
       ],
       "response": "Pierwszym krokiem jest zazwyczaj bezpłatna konsultacja telefoniczna (15 min, 0 zł).\n\nTo luźna rozmowa, podczas której krótko opiszesz swoją sytuację, a recepcja pomoże dopasować odpowiednią specjalistkę i formę terapii.\n\nJeśli wolisz, możesz od razu umówić się na konsultację psychologiczną (50 min, 250 zł).\n\nNie musisz wiedzieć, czego dokładnie potrzebujesz — specjalistka podczas pierwszego spotkania pomoże Ci to ustalić.\n\nZadzwoń lub napisz:\n📞 573 909 822\n📧 recepcja@centrumotulone.pl"
     },
@@ -306,7 +410,10 @@
         "co zabrać", "co zabrac", "co przynieść", "co przyniosc",
         "dokumenty", "dowód", "dowod", "skierowanie", "ubezpieczenie karta",
         "co mam mieć", "co mam miec", "co przygotować", "co przygotowac",
-        "jakie dokumenty", "czy trzeba przynieść", "czy trzeba przyniosc"
+        "jakie dokumenty", "czy trzeba przynieść", "czy trzeba przyniosc",
+        "czy potrzebuję skierowania", "czy potrzebuje skierowania",
+        "czy trzeba skierowanie", "czy muszę mieć skierowanie",
+        "co ze sobą zabrać", "co ze soba zabrac"
       ],
       "response": "Na pierwszą wizytę w Centrum Otulone nie są wymagane żadne specjalne dokumenty ani skierowanie.\n\nMożesz przyjść tak po prostu — wystarczy Twoja obecność i gotowość do rozmowy.\n\nJeśli masz pytania przed wizytą:\n📞 573 909 822\n📧 recepcja@centrumotulone.pl"
     },
@@ -317,7 +424,11 @@
         "usługi", "uslugi", "oferta", "co oferujecie", "co macie", "czym się zajmujecie",
         "czym sie zajmujecie", "dostępne usługi", "dostepne uslugi",
         "co można", "co mozna", "zakres", "specjalizacja", "lista usług",
-        "lista uslug", "co masz", "co masz w ofercie"
+        "lista uslug", "co masz", "co masz w ofercie",
+        "jakie usługi", "jakie uslugi", "co robicie",
+        "czym się specjalizujecie", "czym sie specjalizujecie",
+        "jakie macie usługi", "jakie macie uslugi",
+        "co centrum oferuje", "co centrum otulone oferuje"
       ],
       "response": "Centrum Otulone oferuje:\n\n• Bezpłatna konsultacja telefoniczna (15 min, 0 zł)\n• Konsultacja psychologiczna\n• Psychoterapia indywidualna\n• Psychoterapia z pracą z ciałem\n• Terapia traumy (psychotraumatolog)\n• Konsultacja seksuologiczna\n• Diagnoza ADHD DIVA5 u kobiet\n• Terapia matki i dorosłej córki\n• Terapia par\n• Vouchery na wybrane usługi\n\nCentrum specjalizuje się w terapii dla kobiet (18+).\nSzczegóły: centrumotulone.pl"
     },
@@ -334,9 +445,16 @@
         "psychodynamiczna", "systemowa", "integracyjna", "ericksonowska",
         "terapia nurtem", "praca nad sobą", "iść na terapię", "isc na terapie",
         "czy terapia mi pomoże", "czy terapia mi pomoze",
-        "czy muszę wiedzieć jaki rodzaj terapii", "czy musze wiedziec jaki rodzaj terapii",
+        "czy muszę wiedzieć jaki rodzaj terapii",
         "kiedy warto pójść na terapię", "kiedy warto pojsc na terapie",
-        "terapia dla każdego", "terapia nie tylko dla chorych"
+        "terapia dla każdego", "terapia nie tylko dla chorych",
+        "jak wygląda psychoterapia", "jak wyglada psychoterapia",
+        "czym jest psychoterapia", "czym jest terapia",
+        "co to psychoterapia", "co to terapia",
+        "czy terapia jest dla mnie", "czy potrzebuję terapii", "czy potrzebuje terapii",
+        "dlaczego warto iść na terapię", "dlaczego warto isc na terapie",
+        "czy terapia działa", "czy terapia dziala",
+        "jak działa psychoterapia", "jak dziala psychoterapia"
       ],
       "response": "Psychoterapia indywidualna w Centrum Otulone to regularne spotkania (50 min) z psychoterapeutką.\n\nCzego możesz się spodziewać:\n• Bezpiecznej, nieoceniającej przestrzeni do rozmowy\n• Pracy nad emocjami, przekonaniami i wzorcami zachowań\n• Stopniowego zrozumienia przyczyn Twoich trudności\n• Rozwijania nowych sposobów radzenia sobie\n\nCentrum pracuje w nurtach: CBT, ericksonowskim, psychodynamicznym, systemowym i integracyjnym, a także w terapii traumy.\n\nNie musisz wiedzieć, jakiego nurtu potrzebujesz — specjalistka pomoże Ci to ustalić.\n\nTerapia jest dla każdej, kto chce lepiej rozumieć siebie — nie musisz być w kryzysie.\n\nKoszt: 250 zł / 50 min\nAby umówić:\n📞 573 909 822\n📧 recepcja@centrumotulone.pl"
     },
@@ -352,7 +470,14 @@
         "wizyta psychologiczna", "pomoc u psychologa",
         "konsultacja", "potrzebuję pomocy", "potrzebuje pomocy",
         "potrzebuję wsparcia", "potrzebuje wsparcia", "wsparcie emocjonalne",
-        "pomoc psychologiczna dla kobiet", "psycholog dla kobiet"
+        "pomoc psychologiczna dla kobiet", "psycholog dla kobiet",
+        "potrzebuję kogoś do rozmowy", "potrzebuje kogos do rozmowy",
+        "chcę porozmawiać z kimś", "chce porozmawiac z kims",
+        "z kim mogę porozmawiać", "z kim moge porozmawiac",
+        "potrzebuję pomocy psychologicznej", "potrzebuje pomocy psychologicznej",
+        "chcę porozmawiać z psychologiem", "chce porozmawiac z psychologiem",
+        "chcę wsparcia psychologicznego", "chce wsparcia psychologicznego",
+        "szukam pomocy psychologicznej", "szukam wsparcia psychologicznego"
       ],
       "response": "Centrum Otulone oferuje konsultacje psychologiczne i psychoterapię indywidualną.\n\n• Konsultacja psychologiczna (50 min) — 250 zł\n  Diagnoza i ocena sytuacji — jednorazowa lub kilka spotkań\n\n• Psychoterapia indywidualna (50 min) — 250 zł\n  Regularne spotkania ukierunkowane na trwałą zmianę i rozwój\n\nNie musisz wiedzieć, czego dokładnie potrzebujesz — specjalistka podczas pierwszego spotkania pomoże Ci ustalić najlepszą formę wsparcia.\n\nAby umówić:\n📞 573 909 822\n📧 recepcja@centrumotulone.pl"
     },
@@ -361,12 +486,17 @@
       "id": "terapia_traumy",
       "keywords": [
         "trauma", "traumy", "traumatyczne", "terapia traumy", "terapii traumy", "ptsd",
-        "przeżycia traumatyczne", "przezywania traumatyczne", "trudne doświadczenia",
-        "trudne doswiadczenia", "przemoc", "molestowanie", "gwałt", "gwalt",
+        "przeżycia traumatyczne", "trudne doświadczenia", "trudne doswiadczenia",
+        "przemoc", "molestowanie", "gwałt", "gwalt",
         "wypadek", "strata", "żałoba", "zaloba", "krzywda z dzieciństwa",
-        "krzywda z dziecinstwa", "wczesnodziecięce", "wczesnodzieciece",
-        "doświadczyłam przemocy", "doswiadczylam przemocy",
-        "psychotraumatolog", "trauma dzieciństwa", "trauma dziecinstwa"
+        "krzywda z dziecinstwa", "doświadczyłam przemocy", "doswiadczylam przemocy",
+        "psychotraumatolog", "trauma dzieciństwa", "trauma dziecinstwa",
+        "mam traumę", "mam traume", "przeżyłam coś traumatycznego",
+        "przezylam cos traumatycznego", "flashbacki", "wspomnienia traumy",
+        "nie mogę zapomnieć tego co się stało",
+        "nie moge zapomniec tego co sie stalo",
+        "terapia po traumie", "pomoc po traumie",
+        "traumatyczne wspomnienia", "nawracające wspomnienia"
       ],
       "response": "Centrum Otulone oferuje specjalistyczną terapię traumy prowadzoną przez psychotraumatolożkę.\n\nTerapia traumy pomaga w przepracowaniu:\n• Trudnych doświadczeń z dzieciństwa\n• Przemocy fizycznej, emocjonalnej lub seksualnej\n• Strat i żałoby\n• Wypadków i nagłych zdarzeń\n• Traumy relacyjnej i z dorosłego życia\n\nKoszt sesji: 250 zł / 50 min\n\nAby umówić konsultację:\n📞 573 909 822\n📧 recepcja@centrumotulone.pl"
     },
@@ -376,10 +506,14 @@
       "keywords": [
         "praca z ciałem", "praca z cialem", "ciało", "cialo", "somatyczna",
         "core energetics", "napięcie w ciele", "napiecie w ciele",
-        "ciało i emocje", "cialo i emocje", "oddech", "ruch", "yoga",
+        "ciało i emocje", "cialo i emocje", "oddech", "ruch",
         "fizyczne objawy", "ciało pamięta", "cialo pamieta",
         "napięcia mięśniowe", "napiecia miesniowe", "psychosomatyczne",
-        "stres w ciele", "emocje w ciele"
+        "stres w ciele", "emocje w ciele",
+        "terapia ciałem", "praca z napięciami", "praca z napiecia",
+        "terapia somatyczna", "emocje w ciele",
+        "terapia ruchem", "blokady w ciele",
+        "psychosomatyka", "co to jest praca z ciałem", "co to jest praca z cialem"
       ],
       "response": "Psychoterapia z pracą z ciałem łączy rozmowę terapeutyczną z technikami somatycznymi.\n\nSesje mogą obejmować:\n• Ćwiczenia oddechowe i pracę z głosem\n• Uważność na sygnały ciała\n• Ruch i rozluźnianie napięć\n• Pracę w pozycji stojącej lub na macie\n\nDotyk jest stosowany wyłącznie za wyraźną zgodą, w bezpiecznych granicach terapeutycznych.\n\nPodejście oparte na Core Energetics.\n\nKoszt: 250 zł / 50 min\nAby umówić:\n📞 573 909 822\n📧 recepcja@centrumotulone.pl"
     },
@@ -393,7 +527,13 @@
         "problemy z intymnością", "problemy z intymnoscia",
         "libido", "ból podczas stosunku", "bol podczas stosunku",
         "anorgazmia", "vaginizmus", "dyspareunia", "problemy seksualne",
-        "orientacja seksualna", "tożsamość seksualna", "tozsamosc seksualna"
+        "orientacja seksualna", "tożsamość seksualna", "tozsamosc seksualna",
+        "brak ochoty na seks", "nie mam ochoty na seks",
+        "problemy w łóżku", "problemy w lozku",
+        "nie odczuwam przyjemności", "nie odczuwam przyjemnosci",
+        "ból przy stosunku", "bol przy stosunku",
+        "czy jest seksuolog", "czy macie seksuologa",
+        "terapia seksuologiczna", "pomoc seksuologiczna"
       ],
       "response": "Centrum Otulone oferuje konsultacje seksuologiczne (50 min).\n\nKonsultacja seksuologiczna może dotyczyć:\n• Trudności i bólu podczas intymności\n• Niskiego libido lub jego braku\n• Pytań o orientację lub tożsamość seksualną\n• Relacji intymnych i bliskości\n• Innych kwestii związanych z seksualnością\n\nKoszt: 250 zł / 50 min\n\nAby umówić:\n📞 573 909 822\n📧 recepcja@centrumotulone.pl"
     },
@@ -409,7 +549,17 @@
         "kryzys w zwiazku", "rozstanie", "separacja", "zdrada",
         "komunikacja w związku", "kłótnie", "klotnie",
         "czy możemy przyjść razem", "czy mozemy przyjsc razem",
-        "czy przyjmujecie pary", "terapia dla dwojga"
+        "czy przyjmujecie pary", "terapia dla dwojga",
+        "terapia małżeńska", "terapia malzenska",
+        "terapia dla małżonków", "terapia dla malzonkow",
+        "małżeństwo", "malzenstwo", "kryzys małżeński", "kryzys malzenski",
+        "problemy w małżeństwie", "problemy w malzenstwie",
+        "terapia małżeństwa", "terapia malzenstwa",
+        "iść razem na terapię", "isc razem na terapie",
+        "możemy przyjść razem", "mozemy przyjsc razem",
+        "terapia dla par", "terapia dla dwójki", "terapia dla dwojki",
+        "problemy ze związkiem", "problemy ze zwiazkiem",
+        "czy możemy przyjść oboje", "czy mozemy przyjsc oboje"
       ],
       "response": "Centrum Otulone oferuje terapię par (60 min, 300 zł).\n\nTerapia par pomaga w:\n• Poprawie komunikacji i zrozumienia w związku\n• Przepracowaniu kryzysu, zdrady lub utraty zaufania\n• Radzeniu sobie z dystansem emocjonalnym\n• Świadomym zakończeniu relacji, jeśli to właściwa droga\n\nSesje odbywają się co dwa tygodnie, w spokojnej, bezpiecznej przestrzeni poza główną siedzibą centrum (szczegóły po umówieniu).\n\nAby umówić:\n📞 573 909 822\n📧 recepcja@centrumotulone.pl"
     },
@@ -420,7 +570,12 @@
         "matka i córka", "matka i corka", "matka córka", "matka corka",
         "relacja z matką", "relacja z matka", "relacja z córką", "relacja z corka",
         "terapia matki", "terapia córki", "terapia rodzinna",
-        "mama", "córka", "corka", "trudna relacja z mamą", "trudna relacja z mama"
+        "mama", "córka", "corka", "trudna relacja z mamą", "trudna relacja z mama",
+        "terapia matki i córki", "terapia matki i corki",
+        "czy możemy przyjść z córką", "czy mozemy przyjsc z corka",
+        "terapia z córką", "terapia z corka",
+        "terapia z mamą", "terapia z mama",
+        "relacja mama córka", "relacja mama corka"
       ],
       "response": "Centrum Otulone oferuje unikalną usługę: terapię matki i dorosłej córki (50 min, 350 zł).\n\nTo wspólne sesje przeznaczone dla matki i dorosłej córki, które chcą:\n• Przepracować trudne wzorce w relacji\n• Lepiej się zrozumieć i komunikować\n• Uzdrowić relację i budować nową jakość więzi\n\nAby umówić:\n📞 573 909 822\n📧 recepcja@centrumotulone.pl"
     },
@@ -430,11 +585,19 @@
       "keywords": [
         "adhd", "diagnoza adhd", "add", "nadpobudliwość", "nadpobudliwosc",
         "koncentracja", "skupienie", "diva", "diva5", "diagnoza",
-        "diagnoza u kobiet", "adhd u kobiet", "neuroroznorodnosc adhd",
+        "diagnoza u kobiet", "adhd u kobiet",
         "problemy z koncentracją", "problemy z koncentracja",
         "chaos w głowie", "chaos w glowie", "zapominanie", "impulsywność",
         "impulsywnosc", "rozproszenie", "prokrastynacja", "wypalenie adhd",
-        "czy to adhd", "objawy adhd", "masking", "maskowanie objawów"
+        "czy to adhd", "objawy adhd", "masking", "maskowanie objawów",
+        "mam adhd", "podejrzewam adhd", "chyba mam adhd",
+        "zdiagnozować adhd", "zdiagnozowac adhd",
+        "czy mam adhd", "objawy add",
+        "czy możecie zdiagnozować adhd", "czy mozecie zdiagnozowac adhd",
+        "diagnoza adhd u dorosłych", "diagnoza adhd u doroslych",
+        "adhd u dorosłych kobiet", "adhd u doroslych kobiet",
+        "nie mogę się skupić", "nie moge sie skupic",
+        "ciągle się rozpraszam", "ciagle sie rozpraszam"
       ],
       "response": "Centrum Otulone oferuje diagnozę ADHD metodą DIVA5 — dedykowaną specjalnie kobietom.\n\nDiagnoza składa się z 3 sesji po 50 minut i obejmuje:\n1. Wywiad kliniczny (dzieciństwo, edukacja, relacje, praca)\n2. Testy psychologiczne (DIVA-5, ASRS dla dorosłych)\n3. Omówienie wyników i zaleceń\n\nCena pakietu: 960 zł\n\nUwaga: ADHD u kobiet często maskuje się perfekcjonizmem, nadodpowiedzialnością i zewnętrznym porządkiem.\n\nAby umówić diagnozę:\n📞 573 909 822\n📧 recepcja@centrumotulone.pl"
     },
@@ -447,7 +610,13 @@
         "recepta", "czy przepiszecie leki",
         "medykacja", "farmakoterapia", "czy potrzebuję leków", "czy potrzebuje lekow",
         "anksjolityki", "benzodiazepiny", "zwolnienie lekarskie", "l4",
-        "czy wystawiacie zwolnienia", "czy wystawiacie recepty"
+        "czy wystawiacie zwolnienia", "czy wystawiacie recepty",
+        "czy macie psychiatrę", "czy macie psychiatre",
+        "czy jest u was psychiatra", "psychiatra w centrum",
+        "czy lekarz psychiatra", "psychiatra czy psycholog",
+        "kto może przepisać leki", "kto moze przepisac leki",
+        "czy mogę dostać leki", "czy moge dostac leki",
+        "czy można dostać receptę", "czy mozna dostac recepte"
       ],
       "response": "Centrum Otulone specjalizuje się w psychoterapii — nie przepisujemy leków ani nie wystawiamy zwolnień lekarskich (L4).\n\nTo zadania lekarza psychiatry. Jeśli potrzebujesz konsultacji psychiatrycznej lub farmakoterapii, możemy:\n• Udzielić informacji o tym, gdzie szukać psychiatry\n• W razie potrzeby współpracować z Twoim psychiatrą\n\nPytania?\n📞 573 909 822\n📧 recepcja@centrumotulone.pl"
     },
@@ -460,7 +629,10 @@
         "kto prowadzi", "zespół", "zespol", "kim są", "kim sa",
         "psychotraumatolog", "seksuolog", "seksuolożka", "seksuolozka",
         "kwalifikacje", "wykształcenie", "wyksztalcenie", "doświadczenie",
-        "doswiadczenie", "kto się zajmuje", "beata", "anna", "imię terapeutki"
+        "doswiadczenie", "kto się zajmuje", "kto sie zajmuje",
+        "kto pracuje w centrum", "kto was prowadzi",
+        "jakie macie specjalistki", "jakie macie specjalisci",
+        "kto będzie mnie przyjmować", "kto bedzie mnie przyjmowac"
       ],
       "response": "Centrum Otulone posiada zespół wysoko wykwalifikowanych specjalistek:\n\n• Psycholożki i psychoterapeutki\n• Psychotraumatolożki\n• Seksuolożki\n\nCentrum specjalizuje się w terapii dla kobiet. Każda specjalistka jest pod regularną superwizją, co gwarantuje wysoką jakość pracy.\n\nSzczegółowe profile znajdziesz na:\n🌐 centrumotulone.pl (zakładka: Nasz Zespół)"
     },
@@ -470,8 +642,12 @@
       "keywords": [
         "superwizja", "superwizje", "certyfikat", "certyfikaty", "kwalifikacje",
         "szkolenie", "wykształcenie terapeutek", "czy są certyfikowane",
-        "ptpd", "pt", "towarzystwo psychologiczne", "jak sprawdzić",
-        "czy są dobre", "zaufana terapeutka", "bezpieczna terapia"
+        "ptpd", "towarzystwo psychologiczne", "jak sprawdzić",
+        "czy są dobre", "zaufana terapeutka", "bezpieczna terapia",
+        "czy terapeutki są certyfikowane", "czy terapeutki sa certyfikowane",
+        "czy mają uprawnienia", "czy maja uprawnienia",
+        "jak sprawdzić kwalifikacje", "jak sprawdzic kwalifikacje",
+        "czy możecie mi zaufać", "czy mozecie mi zaufac"
       ],
       "response": "Wszystkie specjalistki w Centrum Otulone posiadają odpowiednie kwalifikacje i pracują pod regularną superwizją.\n\nSuperwizja to standard etyczny w psychoterapii — oznacza, że terapeutka regularnie konsultuje swoją pracę z doświadczonym superwizorem, dbając o jakość i bezpieczeństwo terapii.\n\nSzczegółowe informacje o kwalifikacjach poszczególnych specjalistek znajdziesz na:\n🌐 centrumotulone.pl"
     },
@@ -499,7 +675,16 @@
         "centrum tylko dla kobiet", "czy tylko kobiety",
         "czy mężczyźni mogą przyjść", "czy mezczyzni moga przyjsc",
         "czy panowie mogą przyjść", "czy panowie moga przyjsc",
-        "czy przyjmujecie mężczyzn", "czy przyjmujecie mezczyzn"
+        "czy w centrum przyjmujecie tylko kobiety",
+        "czy w centrum przyjmujecie wylacznie kobiety",
+        "od ilu lat", "minimalny wiek przyjęcia", "dla jakiego wieku",
+        "czy przyjmujecie dorosłe", "czy przyjmujecie doroslych",
+        "czy tylko pełnoletnie", "pełnoletnie", "18 lat minimum",
+        "czy mogę przyjść jako kobieta", "czy przyjmujecie kobiety",
+        "centrum dla kobiet", "tylko dla dorosłych kobiet",
+        "jaki wiek", "minimalna granica wieku",
+        "czy macie miejsce dla mężczyzn", "czy macie miejsce dla mezczyzn",
+        "miejsce dla mężczyzn", "miejsce dla mezczyzn"
       ],
       "response": "Centrum Otulone przyjmuje wyłącznie dorosłe kobiety (18 lat i więcej).\n\nNiestety, centrum nie prowadzi terapii dla:\n• Dzieci i nastolatków (poniżej 18. roku życia)\n• Mężczyzn\n\nJeśli szukasz pomocy dla osoby niepełnoletniej lub mężczyzny, recepcja chętnie wskaże inne placówki.\n\n📞 573 909 822\n📧 recepcja@centrumotulone.pl"
     },
@@ -510,7 +695,15 @@
         "online", "zdalne", "przez internet", "przez komputer",
         "zdalnie", "wideokonferencja", "wideo", "video", "skype", "zoom",
         "teams", "meet", "zdalna konsultacja", "zdalna terapia",
-        "czy jest online", "czy mogę online", "z domu"
+        "czy jest online", "czy mogę online", "z domu",
+        "sesja online", "terapia online", "konsultacja online",
+        "sesja przez internet", "terapia przez internet",
+        "spotkanie przez internet", "spotkanie online",
+        "konsultacja przez zoom", "wideorozmowa",
+        "czy można online", "czy mozna online",
+        "czy można przez internet", "czy mozna przez internet",
+        "czy macie online", "czy jest możliwe online",
+        "czy możliwa jest sesja online", "czy mozliwa jest sesja online"
       ],
       "response": "Tak — Centrum Otulone oferuje sesje online.\n\nKonsultacja/terapia online (50 min): 250 zł\n\nSesje odbywają się przez bezpieczne połączenie wideo. Potrzebujesz tylko spokojnego miejsca i dostępu do internetu.\n\nAby umówić sesję online:\n📞 573 909 822\n📧 recepcja@centrumotulone.pl"
     },
@@ -521,7 +714,10 @@
         "voucher", "vouchery", "bon", "bon podarunkowy", "prezent",
         "prezent na urodziny", "prezent dla bliskiej", "podarunek",
         "karta podarunkowa", "karta prezentowa", "kupię komuś", "kupi komus",
-        "dla przyjaciółki", "dla przyjaciolki", "dla mamy", "dla córki"
+        "dla przyjaciółki", "dla przyjaciolki", "dla mamy", "dla córki",
+        "czy macie vouchery", "czy można kupić voucher",
+        "czy mozna kupic voucher", "prezent terapeutyczny",
+        "gift card", "podarunek dla kogoś bliskiego"
       ],
       "response": "Centrum Otulone oferuje vouchery na wybrane usługi — świetny pomysł na przemyślany prezent dla bliskiej osoby.\n\nAby kupić voucher lub dowiedzieć się więcej:\n\n📞 573 909 822\n📧 recepcja@centrumotulone.pl\n🌐 centrumotulone.pl"
     },
@@ -534,7 +730,16 @@
         "prywatność", "prywatnosc", "bezpieczne", "anonimowość", "anonimowosc",
         "czy coś wycieknie", "czy cos wycieknie", "dane osobowe",
         "rodo", "gdpr", "czy ktoś się dowie", "czy ktos sie dowie",
-        "czy sesje są nagrywane", "czy sesje sa nagrywane", "nagrywanie"
+        "czy sesje są nagrywane", "czy sesje sa nagrywane", "nagrywanie",
+        "czy to jest poufne", "czy to jest tajne",
+        "czy mąż się dowie", "czy maz sie dowie",
+        "czy rodzina się dowie", "czy rodzina sie dowie",
+        "czy pracodawca się dowie", "czy pracodawca sie dowie",
+        "czy partner się dowie", "czy partner sie dowie",
+        "czy ktoś będzie wiedział", "czy ktos bedzie wiedzial",
+        "czy mogę być anonimowa", "czy moge byc anonimowa",
+        "czy jest poufność", "czy jest poufnosc",
+        "czy zachowujecie tajemnicę", "czy zachowujecie tajemnice"
       ],
       "response": "Wszystkie spotkania w Centrum Otulone objęte są ścisłą tajemnicą zawodową.\n\nInformacje przekazane podczas sesji są bezpieczne i poufne. Psycholog/psychoterapeuta jest prawnie i etycznie zobowiązany do zachowania tajemnicy zawodowej.\n\nWyjątki od poufności dotyczą wyłącznie sytuacji bezpośredniego zagrożenia życia — jest to standard etyczny i prawny obowiązujący w całej Polsce.\n\nSesje nie są nagrywane.\n\nMasz więcej pytań?\n📞 573 909 822\n📧 recepcja@centrumotulone.pl"
     },
@@ -548,7 +753,15 @@
         "beznadziejnosc", "płaczę", "placze", "bez motywacji",
         "wybudzam się w nocy", "wybudzam sie w nocy", "utrata sensu",
         "poczucie pustki", "nic mi nie sprawia radości", "nic mi nie sprawia radosci",
-        "depresja poporodowa", "ciągle płaczę", "ciągle placze"
+        "depresja poporodowa", "ciągle płaczę", "ciągle placze",
+        "czuję się źle", "czuje sie zle", "jest mi smutno",
+        "nic mnie nie cieszy", "brakuje mi energii",
+        "czuję pustkę", "czuje pustke", "stany depresyjne",
+        "chyba mam depresję", "chyba mam depresje",
+        "czy macie pomoc przy depresji", "czy pomagacie przy depresji",
+        "czuję się beznadziejnie", "czuje sie beznadziejnie",
+        "nie widzę sensu", "nie widze sensu",
+        "nic mi się nie chce", "nic mi sie nie chce"
       ],
       "response": "Rozumiem, że jest Ci teraz trudno.\n\nCentrum Otulone oferuje wsparcie psychologiczne i psychoterapię, które pomagają w stanach depresyjnych, przygnębieniu i braku energii.\n\nNajlepszym pierwszym krokiem jest:\n1. Bezpłatna konsultacja telefoniczna (15 min, 0 zł)\n2. Konsultacja psychologiczna (50 min, 250 zł)\n\nNie musisz radzić sobie z tym sama.\n\n📞 573 909 822\n📧 recepcja@centrumotulone.pl"
     },
@@ -561,7 +774,15 @@
         "fobia", "fobie", "strach", "strach bez powodu",
         "kołatanie serca", "kolatanie serca", "trudności z oddychaniem",
         "duszność", "dusznosc", "zawroty głowy ze stresu",
-        "lęk społeczny", "lek spoleczny", "agorafobia", "social anxiety"
+        "lęk społeczny", "lek spoleczny", "agorafobia", "social anxiety",
+        "ataki lękowe", "atak lekowy", "napad paniki",
+        "panikuję", "panike", "silny lęk", "silny lek",
+        "lęk uogólniony", "lek uogolniony", "ataki lęku",
+        "mam atak paniki", "dostaję ataków paniki",
+        "dostaje atakow paniki", "lękam się", "lekam sie",
+        "ciągły niepokój", "ciagle sie boje",
+        "czy pomagacie przy lęku", "pomoc przy lęku", "pomoc przy leku",
+        "terapia lęku", "terapia leku", "jak radzić sobie z lękiem"
       ],
       "response": "Centrum Otulone specjalizuje się w pracy z lękiem i atakami paniki.\n\nW ramach terapii indywidualnej lub psychoterapii z pracą z ciałem możesz pracować nad:\n• Rozumieniem mechanizmów lęku\n• Technikami oddechowymi i regulacją układu nerwowego\n• Stopniowym oswajaniem trudnych sytuacji\n• Przyczynami leżącymi u podłoża lęku\n\nKoszt sesji: 250 zł / 50 min\nBezpłatna konsultacja telefoniczna (0 zł): 15 min\n\n📞 573 909 822\n📧 recepcja@centrumotulone.pl"
     },
@@ -570,11 +791,18 @@
       "id": "wypalenie",
       "keywords": [
         "wypalenie", "wypalenie zawodowe", "burnout", "zmęczona", "zmeczona",
-        "wyczerpana", "przemęczenie", "przemeeczenie", "za dużo pracy",
-        "za duzo pracy", "stres w pracy", "nie mogę dłużej",
-        "nie moge dluzej", "praca mnie niszczy", "potrzebuję przerwy",
-        "potrzebuje przerwy", "nie daję rady", "nie daje rady",
-        "przepracowanie", "chroniczne zmęczenie", "chroniczne zmeczenie"
+        "wyczerpana", "przemęczenie", "za dużo pracy", "za duzo pracy",
+        "stres w pracy", "nie mogę dłużej", "nie moge dluzej",
+        "praca mnie niszczy", "potrzebuję przerwy", "potrzebuje przerwy",
+        "nie daję rady", "nie daje rady", "przepracowanie",
+        "chroniczne zmęczenie", "chroniczne zmeczenie",
+        "nie mam siły do pracy", "nie mam sily do pracy",
+        "chcę rzucić pracę", "chce rzucic prace",
+        "nienawidzę swojej pracy", "nienawidze swojej pracy",
+        "praca mnie przytłacza", "praca mnie przytiaza",
+        "za dużo na głowie", "za duzo na glowie",
+        "brak sił", "brak sil", "wypalona", "czuję się wypalona",
+        "czuje sie wypalona", "co to jest burnout"
       ],
       "response": "Centrum Otulone pomaga kobietom w wypaleniu zawodowym i chronicznym wyczerpaniu.\n\nW terapii możesz pracować nad:\n• Rozpoznaniem przyczyn wypalenia\n• Odbudowaniem granic (zawodowych i osobistych)\n• Regeneracją i odzyskaniem energii\n• Zmianą wzorców myślowych (perfekcjonizm, nadodpowiedzialność)\n\nKoszt sesji: 250 zł / 50 min\n\nAby umówić konsultację:\n📞 573 909 822\n📧 recepcja@centrumotulone.pl"
     },
@@ -586,7 +814,14 @@
         "praca", "kariera", "konflikt w pracy", "szef", "boss",
         "trudna sytuacja zawodowa", "zwolnienie", "zmiana pracy",
         "nie radzę sobie w pracy", "nie radze sobie w pracy",
-        "praca i rodzina", "równowaga", "rownoWaga", "work-life balance"
+        "praca i rodzina", "równowaga", "work-life balance",
+        "zbyt dużo obowiązków", "zbyt duzo obowiazkow",
+        "za dużo stresu", "za duzo stresu",
+        "nie radzę sobie ze stresem", "nie radze sobie ze stresem",
+        "jak radzić sobie ze stresem", "jak radzic sobie ze stresem",
+        "przeciążona", "przeciazona", "przytłoczona", "przytioczona",
+        "stres zawodowy", "problemy w pracy",
+        "atmosfera w pracy", "trudny szef", "mobbing"
       ],
       "response": "Centrum Otulone oferuje wsparcie w radzeniu sobie ze stresem i trudnymi sytuacjami zawodowymi.\n\nW ramach konsultacji psychologicznej lub psychoterapii możesz pracować nad:\n• Strategiami radzenia sobie ze stresem\n• Granicami i asertywnością w pracy\n• Równowagą między pracą a życiem prywatnym\n• Decyzjami zawodowymi i zmianą\n\nKoszt: 250 zł / 50 min\n\n📞 573 909 822\n📧 recepcja@centrumotulone.pl"
     },
@@ -598,8 +833,16 @@
         "nie lubię siebie", "nie lubie siebie", "nie jestem wystarczająca",
         "nie jestem wystarczajaca", "krytykuję siebie", "krytykuje siebie",
         "wstyd", "poczucie winy", "perfekcjonizm", "samokrytyka",
-        "nie zasługuję", "nie zasluguje", "nie daję rady",
-        "poczucie bezsensowności", "poczucie bezsensonowsci"
+        "nie zasługuję", "nie zasluguje",
+        "poczucie bezsensowności", "poczucie bezsensonowsci",
+        "nie wierzę w siebie", "nie wierze w siebie",
+        "mam kompleksy", "wstydzę się siebie", "wstydzę się",
+        "czuję się gorsza", "czuje sie gorsza",
+        "nie jestem dobra", "nie jestem dobra w niczym",
+        "zawsze wszystko robię źle", "zawsze wszystko robie zle",
+        "zbyt surowa dla siebie", "wewnętrzny krytyk", "wewnetrzny krytyk",
+        "nie akceptuję siebie", "nie akceptuje siebie",
+        "jak polubić siebie", "jak zaakceptować siebie"
       ],
       "response": "Centrum Otulone pomaga kobietom w pracy z niską samooceną, poczuciem winy i nadmierną samokrytyką.\n\nW terapii możesz stopniowo:\n• Odkrywać źródła trudnych przekonań o sobie\n• Budować zdrowy, współczujący kontakt ze sobą\n• Zmniejszać wpływ perfekcjonizmu i wewnętrznego krytyka\n\nKoszt sesji: 250 zł / 50 min\n\nZacznij od bezpłatnej konsultacji telefonicznej (0 zł):\n📞 573 909 822\n📧 recepcja@centrumotulone.pl"
     },
@@ -611,7 +854,11 @@
         "objadanie się", "objadanie sie", "kompulsywne jedzenie",
         "binge eating", "ortoreksja", "dieta", "kontrola jedzenia",
         "relacja z jedzeniem", "relacja z cialem", "ciało i jedzenie",
-        "waga", "chudnięcie", "tycie", "strach przed jedzeniem"
+        "waga", "chudnięcie", "tycie", "strach przed jedzeniem",
+        "nie mogę przestać jeść", "nie moge przestac jesc",
+        "jem za dużo", "jem za duzo", "jem za mało", "jem za malo",
+        "problem z jedzeniem", "zaburzenia jedzenia",
+        "czy pomagacie przy zaburzeniach odżywiania"
       ],
       "response": "Centrum Otulone oferuje wsparcie psychologiczne i terapeutyczne dla kobiet zmagających się z trudną relacją z jedzeniem i ciałem.\n\nW ramach terapii możliwa jest praca nad:\n• Emocjami leżącymi u podłoża zaburzeń odżywiania\n• Relacją z ciałem i jego obrazem\n• Mechanizmami kontroli i impulsywności\n\nAby dowiedzieć się, która forma wsparcia będzie najlepsza w Twojej sytuacji:\n📞 573 909 822\n📧 recepcja@centrumotulone.pl"
     },
@@ -622,7 +869,13 @@
         "sen", "bezsenność", "bezsennosc", "nie mogę spać", "nie moge spac",
         "problemy ze snem", "budzę się w nocy", "budze sie w nocy",
         "koszmary", "koszmary nocne", "za mało snu", "za malo snu",
-        "zmęczenie mimo snu", "zmeczenie mimo snu", "insomnia"
+        "zmęczenie mimo snu", "zmeczenie mimo snu", "insomnia",
+        "nie mogę zasnąć", "nie moge zasnac",
+        "budzę się za wcześnie", "budze sie za wczesnie",
+        "śpię za mało", "spie za malo", "źle sypiam", "zle sypiam",
+        "złe sny", "zle sny", "nocne wybudzenia",
+        "problemy z zasypianiem", "nie mogę zasypiać",
+        "jak poprawić sen", "leczenie bezsenności", "leczenie bezsennosci"
       ],
       "response": "Problemy ze snem często mają podłoże emocjonalne i mogą być objawem stresu, lęku, depresji lub traumy.\n\nCentrum Otulone może pomóc poprzez:\n• Psychoterapię adresującą przyczyny bezsenności\n• Pracę z lękiem i napięciem\n• Techniki regulacji układu nerwowego\n\nKoszt sesji: 250 zł / 50 min\n\nZacznij od bezpłatnej konsultacji telefonicznej (0 zł):\n📞 573 909 822\n📧 recepcja@centrumotulone.pl"
     },
@@ -634,7 +887,16 @@
         "trudne relacje", "toksyczne relacje", "toksyczna relacja",
         "rodzina", "konflikt rodzinny", "mama", "tata", "rodzeństwo",
         "rodzenstwo", "granice w relacjach", "trudna relacja",
-        "samotność", "samotnosc", "izolacja", "brak bliskich relacji"
+        "samotność", "samotnosc", "izolacja", "brak bliskich relacji",
+        "problemy ze związkiem", "problemy ze zwiazkiem",
+        "kłócę się z partnerem", "kloce sie z partnerem",
+        "kłócę się z mężem", "kloce sie z mezem",
+        "nie rozumiem partnera", "brak komunikacji",
+        "trudno mi budować relacje", "trudno mi budowac relacje",
+        "boję się bliskości", "boje sie bliskosci",
+        "nie umiem być blisko", "nie umiem byc blisko",
+        "problemy w rodzinie", "konflikty z rodziną", "konflikty z rodzina",
+        "toksyczna rodzina", "toksyczny partner"
       ],
       "response": "Centrum Otulone pomaga kobietom w pracy nad relacjami — rodzinnymi, partnerskimi, przyjaźniami.\n\nW terapii możesz:\n• Rozumieć wzorce relacyjne wyniesione z domu\n• Budować zdrowe granice\n• Pracować nad komunikacją i bliskością\n• Radzić sobie z samotnością i izolacją\n\nKoszt sesji: 250 zł / 50 min\n\nAby umówić:\n📞 573 909 822\n📧 recepcja@centrumotulone.pl"
     },
@@ -643,9 +905,14 @@
       "id": "centrum_info",
       "keywords": [
         "centrum otulone", "centrum terapii", "czym jest centrum", "o centrum",
-        "dla kobiet", "co to jest", "kim jesteście",
+        "co to jest", "kim jesteście", "kim jestescie",
         "misja", "filozofia", "podejście", "podejscie",
-        "opis centrum", "informacje o centrum", "o was", "wasze centrum"
+        "opis centrum", "informacje o centrum", "o was", "wasze centrum",
+        "czym się zajmuje centrum", "czym sie zajmuje centrum",
+        "co to centrum otulone", "czym jest centrum otulone",
+        "co to jest centrum otulone", "historia centrum",
+        "jak działa centrum", "jak dziala centrum",
+        "czy to jest centrum terapii", "centrum terapeutyczne"
       ],
       "response": "Centrum Terapii dla Kobiet Otulone to miejsce stworzone z myślą o kobietach, które chcą zadbać o swoje zdrowie psychiczne i emocjonalne.\n\nCentrum łączy psychoterapię, pracę z ciałem i techniki uważności w holistycznym podejściu do dobrostanu.\n\nObszary wsparcia:\n• Emocje, stres i wypalenie\n• Relacje i intymność\n• Trauma i trudne doświadczenia\n• Ciało i zaburzenia odżywiania\n• Neuroróznorodność (ADHD)\n• Seksualność i bliskość\n\n📍 ul. Kartuska 426b/8, 80-125 Gdańsk – Jasień\n📞 573 909 822\n📧 recepcja@centrumotulone.pl\n🌐 centrumotulone.pl"
     },
@@ -657,7 +924,11 @@
         "czas oczekiwania", "czy są wolne terminy", "czy sa wolne terminy",
         "pilnie", "szybko", "jak najszybciej", "kiedy możesz mnie przyjąć",
         "kiedy mozesz mnie przyjac", "wolny termin", "dostępność terminów",
-        "dostepnosc terminow", "ile muszę czekać", "ile musze czekac"
+        "dostepnosc terminow", "ile muszę czekać", "ile musze czekac",
+        "kiedy można się umówić", "kiedy mozna sie umowic",
+        "czy jest wolny termin", "kiedy najbliższy termin",
+        "kiedy najblizszy termin", "jak szybko mogę się umówić",
+        "jak szybko moge sie umowic", "czas oczekiwania na wizytę"
       ],
       "response": "Dostępność terminów zależy od aktualnego obłożenia specjalistek.\n\nAby sprawdzić najbliższy wolny termin:\n\n📞 Zadzwoń: 573 909 822\n   (najszybsza forma kontaktu)\n\n📧 Napisz: recepcja@centrumotulone.pl\n\nRecepcja poinformuje Cię o dostępnych terminach i pomoże wybrać odpowiednią specjalistkę."
     },
@@ -669,7 +940,12 @@
         "która terapeutka", "ktora terapeutka", "do kogo iść", "do kogo isc",
         "która jest lepsza", "ktora jest lepsza", "różnica między",
         "roznica miedzy", "kogo polecacie", "kogo polecicie",
-        "jaką wybrać", "jaka wybrac", "nie wiem do kogo"
+        "jaką wybrać", "jaka wybrac", "nie wiem do kogo",
+        "jak wybrać specjalistkę", "jak wybrac specjalistke",
+        "jak wybrać psychologa", "jak wybrac psychologa",
+        "do kogo się udać", "do kogo sie udac",
+        "kto mi pomoże", "kto mi pomoze",
+        "kto będzie dla mnie", "kto bedzie dla mnie"
       ],
       "response": "Wybór terapeutki to ważna decyzja — w Centrum Otulone recepcja chętnie pomoże Ci wybrać specjalistkę najlepiej dopasowaną do Twoich potrzeb.\n\nMożesz też skorzystać z bezpłatnej 15-minutowej konsultacji telefonicznej (0 zł), która pozwoli lepiej określić, jaka forma wsparcia będzie dla Ciebie odpowiednia.\n\nSkontaktuj się:\n📞 573 909 822\n📧 recepcja@centrumotulone.pl"
     },
@@ -682,7 +958,10 @@
         "spóźnię się na wizytę", "spoznie sie na wizyte",
         "spóźnię się na spotkanie", "spoznie sie na spotkanie",
         "kilka minut za późno", "za późno", "za pozno",
-        "jak dojadę później", "przyjdę za późno", "przyjde za pozno"
+        "jak dojadę później", "przyjdę za późno", "przyjde za pozno",
+        "co się stanie jak się spóźnię", "co sie stanie jak sie spoznie",
+        "czy mogę się spóźnić", "czy moge sie spoznic",
+        "spóźnię się kilka minut", "spoznie sie kilka minut"
       ],
       "response": "Jeśli spóźnisz się na wizytę, sesja mimo to zakończy się o zaplanowanej godzinie.\n\nKoszt sesji pozostaje bez zmian, mimo krótszego czasu trwania.\n\nGdy wiesz, że się spóźnisz, najlepiej zadzwoń wcześniej do recepcji:\n📞 573 909 822\n📧 recepcja@centrumotulone.pl"
     },
@@ -695,7 +974,12 @@
         "nie dogaduję się z terapeutką", "nie dogaduje sie z terapeutka",
         "czy mogę zmienić terapeutkę", "czy moge zmienic terapeutke",
         "chcę inną specjalistkę", "chce inna specjalistke",
-        "terapeutka mi nie odpowiada", "nie czuję się dobrze z terapeutką"
+        "terapeutka mi nie odpowiada", "nie czuję się dobrze z terapeutką",
+        "nie czuje sie dobrze z terapeutka",
+        "nie lubię swojej terapeutki", "nie lubie swojej terapeutki",
+        "czy można zmienić terapeutkę", "czy mozna zmienic terapeutke",
+        "jak zmienić terapeutkę", "jak zmienic terapeutke",
+        "nie kliknęło między nami", "nie kliknelo miedzy nami"
       ],
       "response": "Tak — masz pełne prawo zmienić terapeutkę.\n\nZachęcamy jednak, by najpierw porozmawiać o tym z obecną terapeutką — szczera rozmowa często pomaga rozwiązać trudności w relacji terapeutycznej i może okazać się bardzo wartościowa.\n\nJeśli jednak zdecydujesz się na zmianę, recepcja pomoże Ci wybrać inną specjalistkę.\n\n📞 573 909 822\n📧 recepcja@centrumotulone.pl"
     },
@@ -707,7 +991,10 @@
         "zasady wspolpracy", "regulamin terapii", "co podpisuje", "co podpisac",
         "co podpiszę", "umowa z terapeutką", "zasady terapii",
         "co to jest kontrakt terapeutyczny", "co to kontrakt terapeutyczny",
-        "co to jest kontrakt", "czym jest kontrakt terapeutyczny"
+        "co to jest kontrakt", "czym jest kontrakt terapeutyczny",
+        "co zawiera kontrakt", "co jest w kontrakcie",
+        "czy podpisuje się coś", "czy podpisuje sie cos",
+        "jakie są zasady współpracy", "jakie sa zasady wspolpracy"
       ],
       "response": "Na początku współpracy terapeutka przedstawia kontrakt terapeutyczny — dokument opisujący zasady współpracy.\n\nKontrakt zawiera m.in.:\n• Zasady poufności i ich wyjątki\n• Politykę odwoływania wizyt (48h bez opłat)\n• Prawa i obowiązki obu stron\n• Cele i ramy terapii\n\nPodpisanie kontraktu potwierdza świadome uczestnictwo w terapii i jest standardem etycznym.\n\nMasz pytania?\n📞 573 909 822\n📧 recepcja@centrumotulone.pl"
     },
@@ -721,7 +1008,15 @@
         "kto co robi", "kto może mi pomóc", "kto moze mi pomoc",
         "jaka różnica między psychologiem", "jaka roznica miedzy psychologiem",
         "psychiatra czy psycholog", "psycholog czy psychoterapeuta",
-        "czym zajmuje się psycholog", "czym zajmuje sie psycholog"
+        "czym zajmuje się psycholog", "czym zajmuje sie psycholog",
+        "różnica między psychologiem a psychiatrą",
+        "roznica miedzy psychologiem a psychiatra",
+        "czym różni się psychoterapeuta od psychologa",
+        "czym rozni sie psychoterapeuta od psychologa",
+        "co robi psycholog a co psychiatra",
+        "do kogo po leki a do kogo na terapię",
+        "do kogo po leki a do kogo na terapie",
+        "psycholog vs psychiatra", "psychoterapeuta vs psycholog"
       ],
       "response": "Trzy podstawowe specjalizacje w zdrowiu psychicznym:\n\n• Psycholożka — diagnozuje, prowadzi konsultacje i wsparcie. Nie przepisuje leków.\n\n• Psychoterapeutka — prowadzi terapię (psychoterapię) zgodnie z wybranym nurtem (np. CBT, psychodynamicznym). Często jest też psychologiem.\n\n• Psychiatra — lekarz medycyny. Przepisuje leki, wystawia zwolnienia lekarskie i recepty.\n\nW Centrum Otulone pracują psycholożki i psychoterapeutki. Psychiatra jest poza centrum.\n\nNie wiesz, kto Ci będzie potrzebny?\n📞 573 909 822\n📧 recepcja@centrumotulone.pl"
     },
@@ -735,7 +1030,14 @@
         "skończyć terapię", "skonczyc terapie",
         "czy muszę chodzić do końca", "zakończenie terapii",
         "czy to zobowiązanie", "czy muszę kontynuować",
-        "mogę odejść z terapii", "przerwa w terapii"
+        "mogę odejść z terapii", "przerwa w terapii",
+        "czy można przerwać terapię w połowie",
+        "czy mozna przerwac terapie w polowie",
+        "czy jest minimalna liczba sesji", "czy muszę chodzić regularnie",
+        "co jeśli chcę zakończyć", "co jesli chce zakonczyc",
+        "jak zakończyć terapię", "jak zakonczyc terapie",
+        "czy terapia mnie do czegoś zobowiązuje",
+        "czy muszę kontynuować terapię"
       ],
       "response": "Tak — możesz zakończyć terapię w dowolnym momencie. To nie jest zobowiązanie na całe życie.\n\nW przypadku terapii długoterminowej zaleca się właściwe zamknięcie procesu — ostatnie sesje poświęcone są podsumowaniu pracy i świadomemu zakończeniu współpracy.\n\nJeśli rozważasz zakończenie lub przerwę, warto porozmawiać o tym z terapeutką — to ważny temat, który można omówić wspólnie.\n\nPytania?\n📞 573 909 822\n📧 recepcja@centrumotulone.pl"
     }
