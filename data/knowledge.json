@@ -493,7 +493,13 @@
         "ile trzeba mieć lat", "jaki minimalny wiek",
         "czy mogę przyjść z córką", "czy moge przyjsc z corka",
         "czy przyjmujecie osoby niepełnoletnie",
-        "czy mężczyzna może przyjść", "czy mezczyzna moze przyjsc"
+        "czy mężczyzna może przyjść", "czy mezczyzna moze przyjsc",
+        "przyjmujecie tylko kobiety", "przyjmujecie wylacznie kobiety",
+        "tylko kobiety", "wyłącznie kobiety", "wylacznie kobiety",
+        "centrum tylko dla kobiet", "czy tylko kobiety",
+        "czy mężczyźni mogą przyjść", "czy mezczyzni moga przyjsc",
+        "czy panowie mogą przyjść", "czy panowie moga przyjsc",
+        "czy przyjmujecie mężczyzn", "czy przyjmujecie mezczyzn"
       ],
       "response": "Centrum Otulone przyjmuje wyłącznie dorosłe kobiety (18 lat i więcej).\n\nNiestety, centrum nie prowadzi terapii dla:\n• Dzieci i nastolatków (poniżej 18. roku życia)\n• Mężczyzn\n\nJeśli szukasz pomocy dla osoby niepełnoletniej lub mężczyzny, recepcja chętnie wskaże inne placówki.\n\n📞 573 909 822\n📧 recepcja@centrumotulone.pl"
     },
