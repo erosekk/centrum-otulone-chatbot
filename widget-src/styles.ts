@@ -201,17 +201,34 @@ export const WIDGET_STYLES = `
 
 /* ── Suggested questions (chips) ─────────────────────────────────────────── */
 .co-suggestions {
-  display: flex;
-  flex-direction: column;
-  gap: 6px;
   margin-left: 35px;
   margin-bottom: 10px;
   margin-top: -2px;
 }
+.co-suggestions-label {
+  font-size: 10.5px;
+  color: #7AAAAA;
+  margin-bottom: 7px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+.co-chips-scroll {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  max-height: 190px;
+  overflow-y: auto;
+  padding-right: 3px;
+  scrollbar-width: thin;
+  scrollbar-color: #B5CFCE transparent;
+}
+.co-chips-scroll::-webkit-scrollbar { width: 3px; }
+.co-chips-scroll::-webkit-scrollbar-thumb { background: #B5CFCE; border-radius: 2px; }
 .co-chip {
   display: inline-flex;
   align-items: center;
-  padding: 6px 13px;
+  padding: 7px 13px;
   border-radius: 20px;
   border: 1.5px solid #6B9598;
   background: transparent;
@@ -223,6 +240,7 @@ export const WIDGET_STYLES = `
   text-align: left;
   line-height: 1.3;
   outline: none;
+  flex-shrink: 0;
 }
 .co-chip:hover {
   background: #6B9598;
@@ -231,11 +249,17 @@ export const WIDGET_STYLES = `
   transform: translateY(-1px);
   box-shadow: 0 3px 10px rgba(82,122,125,0.28);
 }
-.co-chip:active {
-  transform: translateY(0);
+.co-chip:active  { transform: translateY(0); }
+.co-chip:focus-visible { box-shadow: 0 0 0 2px rgba(107,149,152,0.4); }
+
+/* Quiz variant — slightly warmer fill */
+.co-chip-quiz {
+  border-color: #83ADAC;
+  color: #3D6E71;
 }
-.co-chip:focus-visible {
-  box-shadow: 0 0 0 2px rgba(107,149,152,0.4);
+.co-chip-quiz:hover {
+  background: #83ADAC;
+  border-color: #83ADAC;
 }
 
 /* ── Typing indicator ────────────────────────────────────────────────────── */
@@ -345,8 +369,8 @@ export const WIDGET_STYLES = `
 @media (max-width: 480px) {
   .co-window {
     width: calc(100vw - 20px);
-    height: calc(100dvh - 100px);
-    min-height: 300px;
+    height: calc(100dvh - 90px);
+    min-height: 320px;
     max-height: none;
     border-radius: 16px;
   }
@@ -358,6 +382,13 @@ export const WIDGET_STYLES = `
   }
   .co-chip {
     font-size: 13px;
+    padding: 8px 13px;
+  }
+  .co-chips-scroll {
+    max-height: 220px;
+  }
+  .co-suggestions {
+    margin-left: 0;
   }
 }
 `;

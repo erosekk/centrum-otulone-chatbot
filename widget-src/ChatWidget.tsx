@@ -14,29 +14,83 @@ interface Msg {
 const WELCOME: Msg = {
   id: "welcome",
   role: "bot",
-  text: "Witam Cię serdecznie. Jestem wirtualną pomocnicą Centrum Otulone. Zadaj mi pytanie, a postaram się na nie odpowiedzieć.",
+  text: "Witam Cię serdecznie. Jestem wirtualną pomocnicą Centrum Otulone.\n\nMogę pomóc Ci znaleźć odpowiednią formę wsparcia lub odpowiedzieć na pytania dotyczące wizyt.",
 };
 
 const SUGGESTED: readonly string[] = [
-  "Jak umówić wizytę?",
-  "Ile kosztuje konsultacja?",
+  "Nie wiem, do której specjalistki się umówić.",
+  "Chcę rozpocząć psychoterapię.",
+  "Szukam psychologa dla siebie.",
+  "Interesuje mnie diagnoza ADHD.",
+  "Chcę umówić konsultację wstępną.",
+  "Jakie są ceny wizyt?",
+  "Jak wygląda pierwsze spotkanie?",
+  "Jak szybko mogę dostać termin?",
+  "Gdzie znajduje się Centrum Otulone?",
   "Jak odwołać wizytę?",
-  "Jak długo trwa sesja?",
 ];
+
+const QUIZ_OPTIONS: readonly string[] = [
+  "Lęk i stres",
+  "Kryzys w związku",
+  "ADHD",
+  "Menopauza",
+  "Trudne emocje",
+  "Niska samoocena",
+  "Trauma",
+  "Problemy seksualne",
+  "Relacja z jedzeniem",
+  "Nie wiem, czego potrzebuję",
+];
+
+const CONTACT = "\n\nAby umówić wizytę lub dopytać o termin:\n📞 573 909 822\n📧 recepcja@centrumotulone.pl";
+
+const QUIZ_RESPONSES: Record<string, string> = {
+  "Lęk i stres":
+    "Przy lęku, napięciu i przewlekłym stresie dobrym pierwszym krokiem może być konsultacja psychologiczna lub psychoterapia indywidualna.\n\nPodczas pierwszego spotkania specjalistka pomoże określić, jaka forma pracy będzie dla Ciebie najbardziej odpowiednia." + CONTACT,
+
+  "Kryzys w związku":
+    "Jeśli trudność dotyczy relacji, rozstania, kryzysu lub komunikacji w związku, dobrym kierunkiem może być konsultacja psychologiczna, psychoterapia indywidualna albo terapia par — zależnie od sytuacji." + CONTACT,
+
+  "ADHD":
+    "Jeśli podejrzewasz u siebie ADHD, możesz zapytać o diagnozę ADHD metodą DIVA5.\n\nTo dobry kierunek, gdy pojawiają się trudności z koncentracją, organizacją, impulsywnością, przeciążeniem lub poczuciem chaosu." + CONTACT,
+
+  "Menopauza":
+    "Przy trudnościach związanych z menopauzą dobrym pierwszym krokiem może być konsultacja psychologiczna lub psychoterapia.\n\nMożesz porozmawiać o emocjach, zmianach w ciele, relacjach, napięciu i poczuciu przeciążenia." + CONTACT,
+
+  "Trudne emocje":
+    "Jeśli trudno Ci poradzić sobie z emocjami, napięciem, smutkiem, złością lub przytłoczeniem, dobrym pierwszym krokiem może być konsultacja psychologiczna.\n\nSpecjalistka pomoże dobrać dalszą formę wsparcia." + CONTACT,
+
+  "Niska samoocena":
+    "Przy niskiej samoocenie, krytycznym myśleniu o sobie lub trudnościach w stawianiu granic pomocna może być psychoterapia indywidualna albo konsultacja psychologiczna na początek." + CONTACT,
+
+  "Trauma":
+    "Jeśli chcesz pracować z trudnymi doświadczeniami lub traumą, warto zapytać o terapię traumy albo psychoterapię indywidualną.\n\nPierwsza konsultacja pomoże dobrać bezpieczną formę pracy." + CONTACT,
+
+  "Problemy seksualne":
+    "W przypadku trudności seksualnych, bólu, spadku libido, napięcia, wstydu lub pytań związanych z seksualnością dobrym kierunkiem może być konsultacja seksuologiczna." + CONTACT,
+
+  "Relacja z jedzeniem":
+    "Jeśli trudności dotyczą jedzenia, emocji, ciała, kontroli lub napięcia wokół wyglądu, dobrym pierwszym krokiem może być konsultacja psychologiczna lub psychoterapia." + CONTACT,
+
+  "Nie wiem, czego potrzebuję":
+    "To całkowicie w porządku, że nie wiesz jeszcze, jakiej formy pomocy potrzebujesz.\n\nNajlepszym pierwszym krokiem jest konsultacja wstępna — bezpłatna, 15-minutowa rozmowa telefoniczna, podczas której recepcja pomoże dobrać odpowiednią ścieżkę wsparcia." + CONTACT,
+};
 
 const BOT_DELAY_MS = 380;
 
 export default function ChatWidget() {
-  const [open, setOpen]     = useState(false);
-  const [msgs, setMsgs]     = useState<Msg[]>([WELCOME]);
-  const [typing, setTyping] = useState(false);
-  const [draft, setDraft]   = useState("");
+  const [open, setOpen]         = useState(false);
+  const [msgs, setMsgs]         = useState<Msg[]>([WELCOME]);
+  const [typing, setTyping]     = useState(false);
+  const [draft, setDraft]       = useState("");
+  const [quizStep, setQuizStep] = useState<null | "category">(null);
 
   const bottomRef   = useRef<HTMLDivElement>(null);
   const textareaRef = useRef<HTMLTextAreaElement>(null);
 
-  // Show chips only while user hasn't sent any message yet
   const showSuggestions = msgs.length === 1 && msgs[0].id === "welcome" && !typing;
+  const showQuiz        = quizStep === "category" && !typing;
 
   useEffect(() => {
     bottomRef.current?.scrollIntoView({ behavior: "smooth" });
@@ -60,9 +114,21 @@ export default function ChatWidget() {
     if (textareaRef.current) textareaRef.current.style.height = "auto";
     addMsg("user", trimmed);
     setTyping(true);
+
     setTimeout(() => {
+      // Quiz category selected — use hardcoded response, bypass matcher
+      if (quizStep === "category" && QUIZ_RESPONSES[trimmed]) {
+        setQuizStep(null);
+        setTyping(false);
+        addMsg("bot", QUIZ_RESPONSES[trimmed]);
+        return;
+      }
+
       const result = matchIntent(trimmed);
       if (result.isFallback) logUnanswered(trimmed);
+
+      // Start quiz when "dobor_specjalistki" intent fires
+      setQuizStep(result.intentId === "dobor_specjalistki" ? "category" : null);
       setTyping(false);
       addMsg("bot", result.response);
     }, BOT_DELAY_MS);
@@ -80,7 +146,6 @@ export default function ChatWidget() {
 
   return (
     <div className="co-widget">
-      {/* Chat window — above the toggle button in flex column */}
       {open && (
         <div
           className="co-window"
@@ -97,7 +162,7 @@ export default function ChatWidget() {
               <div className="co-header-name">Centrum Otulone</div>
               <div className="co-header-status">
                 <span className="co-status-dot" aria-hidden="true" />
-                Wirtualny Pomocnik
+                Wirtualna Pomocnica
               </div>
             </div>
             <button
@@ -122,19 +187,41 @@ export default function ChatWidget() {
               </div>
             ))}
 
-            {/* Suggested quick-reply chips */}
+            {/* Initial quick-reply buttons */}
             {showSuggestions && (
-              <div className="co-suggestions" role="group" aria-label="Sugerowane pytania">
-                {SUGGESTED.map(q => (
-                  <button
-                    key={q}
-                    className="co-chip"
-                    onClick={() => send(q)}
-                    aria-label={`Zapytaj: ${q}`}
-                  >
-                    {q}
-                  </button>
-                ))}
+              <div className="co-suggestions" role="group" aria-label="Najczęstsze pytania">
+                <div className="co-suggestions-label">Najczęstsze pytania</div>
+                <div className="co-chips-scroll">
+                  {SUGGESTED.map(q => (
+                    <button
+                      key={q}
+                      className="co-chip"
+                      onClick={() => send(q)}
+                      aria-label={`Zapytaj: ${q}`}
+                    >
+                      {q}
+                    </button>
+                  ))}
+                </div>
+              </div>
+            )}
+
+            {/* Quiz category buttons */}
+            {showQuiz && (
+              <div className="co-suggestions" role="group" aria-label="Wybierz temat">
+                <div className="co-suggestions-label">Z czym się zmagasz?</div>
+                <div className="co-chips-scroll">
+                  {QUIZ_OPTIONS.map(q => (
+                    <button
+                      key={q}
+                      className="co-chip co-chip-quiz"
+                      onClick={() => send(q)}
+                      aria-label={`Wybierz: ${q}`}
+                    >
+                      {q}
+                    </button>
+                  ))}
+                </div>
               </div>
             )}
 
