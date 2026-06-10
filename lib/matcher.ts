@@ -83,9 +83,12 @@ function keywordMatches(normalizedInput: string, normalizedKw: string, inputWord
 
 function scoreIntent(normalizedInput: string, keywords: string[]): number {
   const inputWords = normalizedInput.split(/\s+/);
+  const seen = new Set<string>();
   let score = 0;
   for (const raw of keywords) {
     const kw = normalize(raw);
+    if (seen.has(kw)) continue; // skip duplicate normalized forms
+    seen.add(kw);
     if (keywordMatches(normalizedInput, kw, inputWords)) {
       score += phraseScore(kw);
     }
