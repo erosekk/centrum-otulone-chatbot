@@ -48,11 +48,16 @@ const ZESPOL = "https://centrumotulone.pl/o-nas/zespol/";
 const ZAPISY = "https://centrumotulone.pl/zapisy/";
 
 // Stopka każdej odpowiedzi quizu: link do listy specjalistów danej kategorii + link do zapisów.
-// slug = undefined → pełna lista zespołu. Składnia [etykieta](url) jest renderowana jako klikalny link.
+// Składnia [etykieta](url) jest renderowana jako klikalny link.
+function footerWithLink(url: string, label = "Zobacz specjalistów →"): string {
+  return `\n\nOto specjaliści:\n[${label}](${url})\n\nAby umówić wizytę:\n[Umów się online →](${ZAPISY})`;
+}
+
+// slug = undefined → pełna lista zespołu (gdy nie ma dedykowanego filtra specjalizacji).
 function quizFooter(slug?: string): string {
   const list = slug ? `${ZESPOL}?e-filter-59db304-specjalizacja=${slug}` : ZESPOL;
-  const listLabel = slug ? "Zobacz specjalistów →" : "Zobacz cały zespół →";
-  return `\n\nOto specjaliści:\n[${listLabel}](${list})\n\nAby umówić wizytę:\n[Umów się online →](${ZAPISY})`;
+  const label = slug ? "Zobacz specjalistów →" : "Zobacz cały zespół →";
+  return footerWithLink(list, label);
 }
 
 const QUIZ_RESPONSES: Record<string, string> = {
@@ -66,13 +71,14 @@ const QUIZ_RESPONSES: Record<string, string> = {
     "Jeśli podejrzewasz u siebie ADHD, możesz zapytać o diagnozę ADHD metodą DIVA5 — pomocną przy trudnościach z koncentracją, organizacją, impulsywnością czy poczuciem chaosu." + quizFooter("diagnoza-adhd-diva5"),
 
   "Menopauza":
-    "Przy trudnościach związanych z menopauzą możesz porozmawiać o emocjach, zmianach w ciele, napięciu i poczuciu przeciążenia podczas konsultacji psychologicznej." + quizFooter("psycholog"),
+    "Przy trudnościach związanych z menopauzą możesz porozmawiać o emocjach, zmianach w ciele, napięciu i poczuciu przeciążenia podczas konsultacji psychologicznej." +
+    footerWithLink("https://centrumotulone.pl/?s=menopauza"),
 
   "Trudne emocje":
     "Jeśli trudno Ci poradzić sobie z emocjami, napięciem, smutkiem lub przytłoczeniem, dobrym pierwszym krokiem może być konsultacja psychologiczna." + quizFooter("psycholog"),
 
   "Niska samoocena":
-    "Przy niskiej samoocenie, krytycznym myśleniu o sobie lub trudnościach w stawianiu granic pomocna może być konsultacja psychologiczna." + quizFooter("psycholog"),
+    "Przy niskiej samoocenie, krytycznym myśleniu o sobie lub trudnościach w stawianiu granic pomocna na początek może być konsultacja psychologiczna, a potem najczęściej psychoterapia." + quizFooter("psycholog"),
 
   "Trauma":
     "Jeśli chcesz pracować z trudnymi doświadczeniami lub traumą, warto skorzystać ze wsparcia psychotraumatologa. Pierwsza konsultacja pomoże dobrać bezpieczną formę pracy." + quizFooter("psychotraumatolog"),
