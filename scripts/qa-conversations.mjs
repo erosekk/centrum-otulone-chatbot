@@ -19,23 +19,18 @@ function normalize(text) {
     .replace(/\s+/g," ").trim();
 }
 function phraseScore(kw){const n=kw.split(" ").length;return (n*(n+1))/2;}
-function levenshtein(a,b){
-  if(Math.abs(a.length-b.length)>2)return 99;
-  const m=a.length,n=b.length;let prev=Array.from({length:n+1},(_,j)=>j);
-  for(let i=1;i<=m;i++){const curr=[i];for(let j=1;j<=n;j++){curr[j]=a[i-1]===b[j-1]?prev[j-1]:1+Math.min(prev[j],curr[j-1],prev[j-1]);}prev=curr;}
-  return prev[n];
-}
-function maxEditDist(w){if(w.length<=5)return 0;if(w.length<=6)return 1;return 2;}
-function wordFuzzy(kw,words){const l=maxEditDist(kw);return words.some(w=>levenshtein(w,kw)<=l);}
-function kwMatch(input,kw,words){if(input.includes(kw))return true;return kw.split(" ").every(w=>wordFuzzy(w,words));}
-function scoreIntent(input,keywords){
+function levenshtein(a,b){if(Math.abs(a.length-b.length)>2)return 99;const m=a.length,n=b.length;const d=Array.from({length:m+1},()=>new Array(n+1).fill(0));for(let i=0;i<=m;i++)d[i][0]=i;for(let j=0;j<=n;j++)d[0][j]=j;for(let i=1;i<=m;i++){for(let j=1;j<=n;j++){const c=a[i-1]===b[j-1]?0:1;d[i][j]=Math.min(d[i-1][j]+1,d[i][j-1]+1,d[i-1][j-1]+c);if(i>1&&j>1&&a[i-1]===b[j-2]&&a[i-2]===b[j-1])d[i][j]=Math.min(d[i][j],d[i-2][j-2]+1);}}return d[m][n];}
+function maxEditDist(w,lenient){if(lenient){if(w.length<=3)return 0;if(w.length<=6)return 1;return 2;}if(w.length<=5)return 0;if(w.length<=6)return 1;return 2;}
+function wordFuzzy(kw,words,lenient){const l=maxEditDist(kw,lenient);return words.some(w=>levenshtein(w,kw)<=l);}
+function kwMatch(input,kw,words,lenient){if(input.includes(kw))return true;return kw.split(" ").every(w=>wordFuzzy(w,words,lenient));}
+function scoreIntent(input,keywords,lenient){
   const words=input.split(/\s+/);const seen=new Set();let s=0;
-  for(const raw of keywords){const kw=normalize(raw);if(seen.has(kw))continue;seen.add(kw);if(kwMatch(input,kw,words))s+=phraseScore(kw);}
+  for(const raw of keywords){const kw=normalize(raw);if(seen.has(kw))continue;seen.add(kw);if(kwMatch(input,kw,words,lenient))s+=phraseScore(kw);}
   return s;
 }
 function matchIntent(userInput){
   const n=normalize(userInput);
-  const cs=scoreIntent(n,k.crisis.keywords);
+  const cs=scoreIntent(n,k.crisis.keywords,true);
   if(cs>0)return {intentId:"CRISIS",score:cs,response:k.crisis.response};
   const scored=k.intents.map(i=>({id:i.id,score:scoreIntent(n,i.keywords),resp:i.response}));
   scored.sort((a,b)=>b.score-a.score);

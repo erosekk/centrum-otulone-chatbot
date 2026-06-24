@@ -34,54 +34,77 @@ function phraseScore(normalizedKw: string): number {
   return (n * (n + 1)) / 2;
 }
 
-// ── Fuzzy matching (Levenshtein) ──────────────────────────────────────────────
+// ── Fuzzy matching (Damerau-Levenshtein, optimal string alignment) ─────────────
 
-// Standard Levenshtein distance (space-optimised, two-row DP).
+// Damerau-Levenshtein (OSA) distance: like Levenshtein but counts a transposition
+// of two ADJACENT characters as a single edit. Transpositions ("wiztya"→"wizyta",
+// "bjie"→"bije") are the most common fast-typing error, so this catches far more
+// real typos than plain Levenshtein without loosening the per-word thresholds.
 // Returns 99 early when length difference alone exceeds the max allowed distance.
 function levenshtein(a: string, b: string): number {
   if (Math.abs(a.length - b.length) > 2) return 99;
   const m = a.length, n = b.length;
-  let prev = Array.from({ length: n + 1 }, (_, j) => j);
+  // Full DP matrix (needed to look back two rows for the transposition rule).
+  const d: number[][] = Array.from({ length: m + 1 }, () => new Array(n + 1).fill(0));
+  for (let i = 0; i <= m; i++) d[i][0] = i;
+  for (let j = 0; j <= n; j++) d[0][j] = j;
   for (let i = 1; i <= m; i++) {
-    const curr: number[] = [i];
     for (let j = 1; j <= n; j++) {
-      curr[j] =
-        a[i - 1] === b[j - 1]
-          ? prev[j - 1]
-          : 1 + Math.min(prev[j], curr[j - 1], prev[j - 1]);
+      const cost = a[i - 1] === b[j - 1] ? 0 : 1;
+      d[i][j] = Math.min(
+        d[i - 1][j] + 1,        // deletion
+        d[i][j - 1] + 1,        // insertion
+        d[i - 1][j - 1] + cost, // substitution
+      );
+      // Adjacent transposition (a[i-1]a[i-2] swapped with b[j-1]b[j-2]).
+      if (i > 1 && j > 1 && a[i - 1] === b[j - 2] && a[i - 2] === b[j - 1]) {
+        d[i][j] = Math.min(d[i][j], d[i - 2][j - 2] + 1);
+      }
     }
-    prev = curr;
   }
-  return prev[n];
+  return d[m][n];
 }
 
-// How many typos we tolerate per keyword word, based on word length:
-//   ≤ 5 chars  → 0  (short words must be exact – avoids false positives like "sobie"≈"fobie", "nie"≈"mnie")
-//   6 chars    → 1  (e.g. "bedzie"≈"bedac", "smutna"≈"smutne")
-//   ≥ 7 chars  → 2  (e.g. "psycholog"≈"psyholog", "terapia"≈"terapi")
-function maxEditDist(word: string): number {
+// How many typos we tolerate per keyword word, based on word length.
+//
+// Two profiles:
+//  • standard — used for normal intents. Short words must be exact to avoid
+//    false positives like "sobie"≈"fobie" or "nie"≈"mnie".
+//      ≤5 → 0,  6 → 1,  ≥7 → 2
+//  • lenient (crisis only) — for crisis detection the cost of MISSING a real
+//    signal far outweighs an occasional false alarm, so we tolerate one typo
+//    on 4–5 char words too (e.g. "domu"≈"domyu", "bije"≈"bjie"). Words ≤3 chars
+//    still require an exact match (protects "nie", "do", "się" from drifting,
+//    and stops "żyć"/"zyc"≈"być"/"byc" from misfiring).
+function maxEditDist(word: string, lenient = false): number {
+  if (lenient) {
+    if (word.length <= 3) return 0;
+    if (word.length <= 5) return 1;
+    if (word.length <= 6) return 1;
+    return 2;
+  }
   if (word.length <= 5) return 0;
   if (word.length <= 6) return 1;
   return 2;
 }
 
 // Checks whether a single keyword word fuzzy-matches any word in the input.
-function wordFuzzyMatchesInput(kwWord: string, inputWords: string[]): boolean {
-  const limit = maxEditDist(kwWord);
+function wordFuzzyMatchesInput(kwWord: string, inputWords: string[], lenient = false): boolean {
+  const limit = maxEditDist(kwWord, lenient);
   return inputWords.some(w => levenshtein(w, kwWord) <= limit);
 }
 
 // Full keyword match: first try exact substring (fast path), then fuzzy word-by-word.
-function keywordMatches(normalizedInput: string, normalizedKw: string, inputWords: string[]): boolean {
+function keywordMatches(normalizedInput: string, normalizedKw: string, inputWords: string[], lenient = false): boolean {
   // Fast path — exact substring (same as before, handles all correct inputs instantly)
   if (normalizedInput.includes(normalizedKw)) return true;
 
   // Fuzzy path — every word in the keyword must fuzzy-match some word in the input
   const kwWords = normalizedKw.split(" ");
-  return kwWords.every(kwWord => wordFuzzyMatchesInput(kwWord, inputWords));
+  return kwWords.every(kwWord => wordFuzzyMatchesInput(kwWord, inputWords, lenient));
 }
 
-function scoreIntent(normalizedInput: string, keywords: string[]): number {
+function scoreIntent(normalizedInput: string, keywords: string[], lenient = false): number {
   const inputWords = normalizedInput.split(/\s+/);
   const seen = new Set<string>();
   let score = 0;
@@ -89,7 +112,7 @@ function scoreIntent(normalizedInput: string, keywords: string[]): number {
     const kw = normalize(raw);
     if (seen.has(kw)) continue; // skip duplicate normalized forms
     seen.add(kw);
-    if (keywordMatches(normalizedInput, kw, inputWords)) {
+    if (keywordMatches(normalizedInput, kw, inputWords, lenient)) {
       score += phraseScore(kw);
     }
   }
@@ -105,8 +128,9 @@ function hasPriceTrigger(normalizedInput: string): boolean {
 export function matchIntent(userInput: string): MatchResult {
   const normalizedInput = normalize(userInput);
 
-  // Crisis check — always highest priority.
-  const crisisScore = scoreIntent(normalizedInput, knowledge.crisis.keywords);
+  // Crisis check — always highest priority. Uses lenient fuzzy matching so that
+  // typos in distress messages ("domyu", "bjie") still trigger the safety response.
+  const crisisScore = scoreIntent(normalizedInput, knowledge.crisis.keywords, true);
   if (crisisScore > 0) {
     return {
       response: knowledge.crisis.response,

@@ -199,8 +199,6 @@
       "przypalam sie",
       "uderzam się",
       "uderzam sie",
-      "biję się",
-      "bije sie",
       "głodzę się żeby ukarać siebie",
       "glodze sie zeby ukarac siebie",
       "karzę siebie fizycznie",
@@ -264,7 +262,20 @@
       "boję się byłego partnera",
       "boje sie bylego partnera",
       "były partner mi groził",
-      "byly partner mi grozil"
+      "byly partner mi grozil",
+      "nie chce rzyc",
+      "nie chce mi sie rzyc",
+      "nie chce juz rzyc",
+      "nie chec zyc",
+      "chce sie zabicz",
+      "samobujstwo",
+      "samobujcze",
+      "mysli samobujcze",
+      "mysle o smerci",
+      "biję samą siebie",
+      "bije sama siebie",
+      "uderzam samą siebie",
+      "uderzam sama siebie"
     ],
     "response": "Przykro mi, że przechodzisz przez trudną sytuację.\n\nJeśli istnieje ryzyko, że możesz zrobić sobie krzywdę lub jesteś w bezpośrednim zagrożeniu — zadzwoń pod numer alarmowy 112 lub skontaktuj się z centrum interwencji kryzysowej.\n\nBezpłatne wsparcie przez całą dobę:\n• Telefon Zaufania dla Dorosłych: 116 123\n• Niebieska Linia (przemoc w rodzinie): 116 123\n\nW sprawach związanych z ofertą Centrum Otulone skontaktuj się z recepcją:\n📞 573 909 822\n📧 recepcja@centrumotulone.pl"
   },
@@ -886,7 +897,11 @@
         "czy mogę przełożyć",
         "czy moge przelozyc",
         "mogę przełożyć",
-        "moge przelozyc"
+        "moge przelozyc",
+        "chce odwolac",
+        "chce odwolac wizyt",
+        "odwolac wizyt",
+        "odwolanie wizyty"
       ],
       "response": "Jeśli potrzebujesz odwołać lub przełożyć wizytę, najlepiej skontaktuj się z recepcją możliwie jak najwcześniej.\n\nWizytę można bezpłatnie odwołać lub przełożyć najpóźniej 48 godzin przed umówionym terminem. W przypadku późniejszego odwołania wizyta jest pełnopłatna.\n\n📞 Telefon: 573 909 822\n📧 E-mail: recepcja@centrumotulone.pl\n\nRecepcja czynna: pon–pt, 8:00–21:00"
     },
@@ -1405,7 +1420,7 @@
         "nie mam się komu zwierzyć",
         "nie mam sie komu zwierzyc"
       ],
-      "response": "Centrum Otulone oferuje konsultacje psychologiczne i psychoterapię indywidualną.\n\n• Konsultacja psychologiczna (50 min) — 250 zł\n  Diagnoza i ocena sytuacji — jednorazowa lub kilka spotkań\n\n• Psychoterapia indywidualna (50 min) — 250 zł\n  Regularne spotkania ukierunkowane na trwałą zmianę i rozwój\n\nNie musisz wiedzieć, czego dokładnie potrzebujesz — specjalistka podczas pierwszego spotkania pomoże Ci ustalić najlepszą formę wsparcia.\n\nAby umówić:\n📞 573 909 822\n📧 recepcja@centrumotulone.pl"
+      "response": "Dobrze, że szukasz wsparcia — to ważny pierwszy krok, nawet jeśli jeszcze nie wiesz dokładnie, czego potrzebujesz.\n\nCentrum Otulone oferuje konsultacje psychologiczne i psychoterapię indywidualną:\n\n• Konsultacja psychologiczna (50 min) — 250 zł\n  Diagnoza i ocena sytuacji — jednorazowa lub kilka spotkań\n\n• Psychoterapia indywidualna (50 min) — 250 zł\n  Regularne spotkania ukierunkowane na trwałą zmianę i rozwój\n\nNie musisz wiedzieć, czego dokładnie potrzebujesz — specjalistka podczas pierwszego spotkania pomoże Ci ustalić najlepszą formę wsparcia.\n\n📞 573 909 822\n📧 recepcja@centrumotulone.pl"
     },
     {
       "id": "terapia_traumy",
@@ -1448,7 +1463,7 @@
         "traumatyczne wspomnienia",
         "nawracające wspomnienia"
       ],
-      "response": "Centrum Otulone oferuje specjalistyczną terapię traumy prowadzoną przez psychotraumatolożkę.\n\nTerapia traumy pomaga w przepracowaniu:\n• Trudnych doświadczeń z dzieciństwa\n• Przemocy fizycznej, emocjonalnej lub seksualnej\n• Strat i żałoby\n• Wypadków i nagłych zdarzeń\n• Traumy relacyjnej i z dorosłego życia\n\nKoszt sesji: 250 zł / 50 min\n\nAby umówić konsultację:\n📞 573 909 822\n📧 recepcja@centrumotulone.pl"
+      "response": "Rozumiem, że powrót do trudnych doświadczeń wymaga odwagi — w Centrum Otulone zadbamy o Twoje poczucie bezpieczeństwa na każdym etapie.\n\nTerapię traumy prowadzi psychotraumatolożka. Pomaga ona w przepracowaniu:\n• Trudnych doświadczeń z dzieciństwa\n• Przemocy fizycznej, emocjonalnej lub seksualnej\n• Strat i żałoby\n• Wypadków i nagłych zdarzeń\n• Traumy relacyjnej i z dorosłego życia\n\nKoszt sesji: 250 zł / 50 min\n\nPracujemy we własnym, bezpiecznym tempie. Aby umówić konsultację:\n📞 573 909 822\n📧 recepcja@centrumotulone.pl"
     },
     {
       "id": "praca_z_cialem",
@@ -1503,7 +1518,7 @@
         "nie akceptuję ciała",
         "nie akceptuje ciala"
       ],
-      "response": "Psychoterapia z pracą z ciałem łączy rozmowę terapeutyczną z technikami somatycznymi.\n\nSesje mogą obejmować:\n• Ćwiczenia oddechowe i pracę z głosem\n• Uważność na sygnały ciała\n• Ruch i rozluźnianie napięć\n• Pracę w pozycji stojącej lub na macie\n\nDotyk jest stosowany wyłącznie za wyraźną zgodą, w bezpiecznych granicach terapeutycznych.\n\nPodejście oparte na Core Energetics.\n\nKoszt: 250 zł / 50 min\nAby umówić:\n📞 573 909 822\n📧 recepcja@centrumotulone.pl"
+      "response": "Rozumiem, że relacja z własnym ciałem bywa trudna — praca z ciałem może być łagodną drogą do tego, by poczuć się w nim bezpieczniej.\n\nPsychoterapia z pracą z ciałem łączy rozmowę terapeutyczną z technikami somatycznymi. Sesje mogą obejmować:\n• Ćwiczenia oddechowe i pracę z głosem\n• Uważność na sygnały ciała\n• Ruch i rozluźnianie napięć\n• Pracę w pozycji stojącej lub na macie\n\nDotyk jest stosowany wyłącznie za wyraźną zgodą, w bezpiecznych granicach terapeutycznych. Podejście oparte na Core Energetics.\n\nKoszt: 250 zł / 50 min\nAby umówić:\n📞 573 909 822\n📧 recepcja@centrumotulone.pl"
     },
     {
       "id": "seksuologia",
@@ -1589,7 +1604,7 @@
         "czuję się obco we własnym ciele",
         "czuje sie obco we wlasnym ciele"
       ],
-      "response": "Centrum Otulone oferuje konsultacje seksuologiczne (50 min).\n\nKonsultacja seksuologiczna może dotyczyć:\n• Trudności i bólu podczas intymności\n• Niskiego libido lub jego braku\n• Pytań o orientację lub tożsamość seksualną\n• Relacji intymnych i bliskości\n• Innych kwestii związanych z seksualnością\n\nKoszt: 250 zł / 50 min\n\nAby umówić:\n📞 573 909 822\n📧 recepcja@centrumotulone.pl"
+      "response": "Rozumiem, że to bardzo osobisty temat — w Centrum Otulone możesz o nim porozmawiać bez wstydu i bez oceny.\n\nOferujemy konsultacje seksuologiczne (50 min). Konsultacja może dotyczyć:\n• Trudności i bólu podczas intymności\n• Niskiego libido lub jego braku\n• Pytań o orientację lub tożsamość seksualną\n• Relacji intymnych i bliskości\n• Innych kwestii związanych z seksualnością\n\nKoszt: 250 zł / 50 min\n\nAby umówić w komfortowych warunkach:\n📞 573 909 822\n📧 recepcja@centrumotulone.pl"
     },
     {
       "id": "terapia_par",
@@ -2584,7 +2599,7 @@
         "trzęsie mnie ze stresu",
         "trzesie mnie ze stresu"
       ],
-      "response": "Centrum Otulone specjalizuje się w pracy z lękiem i atakami paniki.\n\nW ramach terapii indywidualnej lub psychoterapii z pracą z ciałem możesz pracować nad:\n• Rozumieniem mechanizmów lęku\n• Technikami oddechowymi i regulacją układu nerwowego\n• Stopniowym oswajaniem trudnych sytuacji\n• Przyczynami leżącymi u podłoża lęku\n\nKoszt sesji: 250 zł / 50 min\nBezpłatna konsultacja telefoniczna (0 zł): 15 min\n\n📞 573 909 822\n📧 recepcja@centrumotulone.pl"
+      "response": "Rozumiem, że lęk i napady paniki potrafią być przytłaczające — to, że szukasz wsparcia, jest ważnym krokiem.\n\nCentrum Otulone specjalizuje się w pracy z lękiem i atakami paniki. W ramach terapii indywidualnej lub psychoterapii z pracą z ciałem możesz pracować nad:\n• Rozumieniem mechanizmów lęku\n• Technikami oddechowymi i regulacją układu nerwowego\n• Stopniowym oswajaniem trudnych sytuacji\n• Przyczynami leżącymi u podłoża lęku\n\nKoszt sesji: 250 zł / 50 min\nBezpłatna konsultacja telefoniczna (0 zł): 15 min\n\nNie musisz mierzyć się z tym sama.\n📞 573 909 822\n📧 recepcja@centrumotulone.pl"
     },
     {
       "id": "wypalenie",
@@ -2654,7 +2669,7 @@
         "czuję pustkę po pracy",
         "czuje pustke po pracy"
       ],
-      "response": "Centrum Otulone pomaga kobietom w wypaleniu zawodowym i chronicznym wyczerpaniu.\n\nW terapii możesz pracować nad:\n• Rozpoznaniem przyczyn wypalenia\n• Odbudowaniem granic (zawodowych i osobistych)\n• Regeneracją i odzyskaniem energii\n• Zmianą wzorców myślowych (perfekcjonizm, nadodpowiedzialność)\n\nKoszt sesji: 250 zł / 50 min\n\nAby umówić konsultację:\n📞 573 909 822\n📧 recepcja@centrumotulone.pl"
+      "response": "Rozumiem, że ciągłe wyczerpanie potrafi odbierać siłę na co dzień — dobrze, że szukasz dla siebie wsparcia.\n\nCentrum Otulone pomaga kobietom w wypaleniu zawodowym i chronicznym wyczerpaniu. W terapii możesz pracować nad:\n• Rozpoznaniem przyczyn wypalenia\n• Odbudowaniem granic (zawodowych i osobistych)\n• Regeneracją i odzyskaniem energii\n• Zmianą wzorców myślowych (perfekcjonizm, nadodpowiedzialność)\n\nKoszt sesji: 250 zł / 50 min\n\nNie musisz radzić sobie z tym sama.\n📞 573 909 822\n📧 recepcja@centrumotulone.pl"
     },
     {
       "id": "stres_praca",
@@ -2719,9 +2734,11 @@
         "nie mogę się wyłączyć",
         "nie moge sie wylaczyc",
         "myślę o pracy cały czas",
-        "mysle o pracy caly czas"
+        "mysle o pracy caly czas",
+        "stress",
+        "stres w pracy i w domu"
       ],
-      "response": "Centrum Otulone oferuje wsparcie w radzeniu sobie ze stresem i trudnymi sytuacjami zawodowymi.\n\nW ramach konsultacji psychologicznej lub psychoterapii możesz pracować nad:\n• Strategiami radzenia sobie ze stresem\n• Granicami i asertywnością w pracy\n• Równowagą między pracą a życiem prywatnym\n• Decyzjami zawodowymi i zmianą\n\nKoszt: 250 zł / 50 min\n\n📞 573 909 822\n📧 recepcja@centrumotulone.pl"
+      "response": "Rozumiem, że przewlekły stres potrafi być naprawdę obciążający — warto w takim momencie zadbać o siebie.\n\nCentrum Otulone oferuje wsparcie w radzeniu sobie ze stresem i trudnymi sytuacjami zawodowymi. W ramach konsultacji psychologicznej lub psychoterapii możesz pracować nad:\n• Strategiami radzenia sobie ze stresem\n• Granicami i asertywnością w pracy\n• Równowagą między pracą a życiem prywatnym\n• Decyzjami zawodowymi i zmianą\n\nKoszt: 250 zł / 50 min\n\nNie musisz radzić sobie z tym sama.\n📞 573 909 822\n📧 recepcja@centrumotulone.pl"
     },
     {
       "id": "niska_samoocena",
@@ -2869,7 +2886,7 @@
         "czuję winę po jedzeniu",
         "czuje wine po jedzeniu"
       ],
-      "response": "Centrum Otulone oferuje wsparcie psychologiczne i terapeutyczne dla kobiet zmagających się z trudną relacją z jedzeniem i ciałem.\n\nW ramach terapii możliwa jest praca nad:\n• Emocjami leżącymi u podłoża zaburzeń odżywiania\n• Relacją z ciałem i jego obrazem\n• Mechanizmami kontroli i impulsywności\n\nAby dowiedzieć się, która forma wsparcia będzie najlepsza w Twojej sytuacji:\n📞 573 909 822\n📧 recepcja@centrumotulone.pl"
+      "response": "Rozumiem, że trudna relacja z jedzeniem i ciałem bywa bardzo bolesna — to ważne, że szukasz wsparcia.\n\nCentrum Otulone oferuje wsparcie psychologiczne i terapeutyczne dla kobiet zmagających się z trudną relacją z jedzeniem i ciałem. W ramach terapii możliwa jest praca nad:\n• Emocjami leżącymi u podłoża zaburzeń odżywiania\n• Relacją z ciałem i jego obrazem\n• Mechanizmami kontroli i impulsywności\n\nNie jesteś z tym sama. Aby dowiedzieć się, która forma wsparcia będzie najlepsza w Twojej sytuacji:\n📞 573 909 822\n📧 recepcja@centrumotulone.pl"
     },
     {
       "id": "zaburzenia_snu",
@@ -2906,7 +2923,7 @@
         "leczenie bezsenności",
         "leczenie bezsennosci"
       ],
-      "response": "Problemy ze snem często mają podłoże emocjonalne i mogą być objawem stresu, lęku, depresji lub traumy.\n\nCentrum Otulone może pomóc poprzez:\n• Psychoterapię adresującą przyczyny bezsenności\n• Pracę z lękiem i napięciem\n• Techniki regulacji układu nerwowego\n\nKoszt sesji: 250 zł / 50 min\n\nZacznij od bezpłatnej konsultacji telefonicznej (0 zł):\n📞 573 909 822\n📧 recepcja@centrumotulone.pl"
+      "response": "Rozumiem, jak wyczerpujące potrafią być nieprzespane noce — i jak bardzo odbijają się na codziennym samopoczuciu.\n\nProblemy ze snem często mają podłoże emocjonalne i mogą być objawem stresu, lęku, depresji lub traumy. Centrum Otulone może pomóc poprzez:\n• Psychoterapię adresującą przyczyny bezsenności\n• Pracę z lękiem i napięciem\n• Techniki regulacji układu nerwowego\n\nKoszt sesji: 250 zł / 50 min\n\nZacznij od bezpłatnej konsultacji telefonicznej (0 zł):\n📞 573 909 822\n📧 recepcja@centrumotulone.pl"
     },
     {
       "id": "relacje",
@@ -3007,7 +3024,7 @@
         "przyciągam toksycznych ludzi",
         "przyciagam toksycznych ludzi"
       ],
-      "response": "Centrum Otulone pomaga kobietom w pracy nad relacjami — rodzinnymi, partnerskimi, przyjaźniami.\n\nW terapii możesz:\n• Rozumieć wzorce relacyjne wyniesione z domu\n• Budować zdrowe granice\n• Pracować nad komunikacją i bliskością\n• Radzić sobie z samotnością i izolacją\n\nKoszt sesji: 250 zł / 50 min\n\nAby umówić:\n📞 573 909 822\n📧 recepcja@centrumotulone.pl"
+      "response": "Rozumiem, że trudności w relacjach potrafią mocno ważyć na codziennym samopoczuciu — dobrze, że chcesz o to zadbać.\n\nCentrum Otulone pomaga kobietom w pracy nad relacjami — rodzinnymi, partnerskimi, przyjaźniami. W terapii możesz:\n• Rozumieć wzorce relacyjne wyniesione z domu\n• Budować zdrowe granice\n• Pracować nad komunikacją i bliskością\n• Radzić sobie z samotnością i izolacją\n\nKoszt sesji: 250 zł / 50 min\n\nNie musisz mierzyć się z tym sama.\n📞 573 909 822\n📧 recepcja@centrumotulone.pl"
     },
     {
       "id": "centrum_info",
@@ -3454,7 +3471,7 @@
         "nie rozpoznaję swojego ciała",
         "nie rozpoznaje swojego ciala"
       ],
-      "response": "Centrum Otulone oferuje wsparcie psychologiczne i psychoterapeutyczne dla kobiet w okresie menopauzy i perimenopauzy.\n\nPodczas sesji możesz porozmawiać o:\n• Wahaniach nastroju, drażliwości i napięciu\n• Zmianach w ciele i samopostrzeganiu\n• Poczuciu przeciążenia i wyczerpania\n• Trudnościach w relacjach i seksualności\n\nKoszt konsultacji: 250 zł / 50 min\n\nUmów się lub zapytaj o dostępność:\n📞 573 909 822\n📧 recepcja@centrumotulone.pl"
+      "response": "Rozumiem, że ten okres potrafi przynieść wiele zmian, które trudno udźwignąć w pojedynkę — masz prawo szukać wsparcia.\n\nCentrum Otulone oferuje wsparcie psychologiczne i psychoterapeutyczne dla kobiet w okresie menopauzy i perimenopauzy. Podczas sesji możesz porozmawiać o:\n• Wahaniach nastroju, drażliwości i napięciu\n• Zmianach w ciele i samopostrzeganiu\n• Poczuciu przeciążenia i wyczerpania\n• Trudnościach w relacjach i seksualności\n\nKoszt konsultacji: 250 zł / 50 min\n\nNie musisz przechodzić przez to sama.\n📞 573 909 822\n📧 recepcja@centrumotulone.pl"
     }
   ],
   "fallback": "Nie mam pewnej odpowiedzi na to pytanie, ale recepcja Centrum Otulone chętnie pomoże Ci dobrać odpowiednią formę wsparcia lub wyjaśni szczegóły wizyty.\n\n📞 573 909 822\n📧 recepcja@centrumotulone.pl"

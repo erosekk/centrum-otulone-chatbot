@@ -25,35 +25,19 @@ function phraseScore(kw) {
   return (n * (n + 1)) / 2;
 }
 
-function levenshtein(a, b) {
-  if (Math.abs(a.length - b.length) > 2) return 99;
-  const m = a.length, n = b.length;
-  let prev = Array.from({ length: n + 1 }, (_, j) => j);
-  for (let i = 1; i <= m; i++) {
-    const curr = [i];
-    for (let j = 1; j <= n; j++) {
-      curr[j] = a[i - 1] === b[j - 1] ? prev[j - 1] : 1 + Math.min(prev[j], curr[j - 1], prev[j - 1]);
-    }
-    prev = curr;
-  }
-  return prev[n];
-}
+function levenshtein(a,b){if(Math.abs(a.length-b.length)>2)return 99;const m=a.length,n=b.length;const d=Array.from({length:m+1},()=>new Array(n+1).fill(0));for(let i=0;i<=m;i++)d[i][0]=i;for(let j=0;j<=n;j++)d[0][j]=j;for(let i=1;i<=m;i++){for(let j=1;j<=n;j++){const c=a[i-1]===b[j-1]?0:1;d[i][j]=Math.min(d[i-1][j]+1,d[i][j-1]+1,d[i-1][j-1]+c);if(i>1&&j>1&&a[i-1]===b[j-2]&&a[i-2]===b[j-1])d[i][j]=Math.min(d[i][j],d[i-2][j-2]+1);}}return d[m][n];}
 
-function maxEditDist(word) {
-  if (word.length <= 5) return 0;
-  if (word.length <= 6) return 1;
-  return 2;
-}
+function maxEditDist(word,lenient){if(lenient){if(word.length<=3)return 0;if(word.length<=6)return 1;return 2;}if(word.length<=5)return 0;if(word.length<=6)return 1;return 2;}
 
-function wordFuzzyMatchesInput(kwWord, inputWords) {
-  const limit = maxEditDist(kwWord);
+function wordFuzzyMatchesInput(kwWord, inputWords, lenient) {
+  const limit = maxEditDist(kwWord, lenient);
   return inputWords.some(w => levenshtein(w, kwWord) <= limit);
 }
 
-function keywordMatches(normalizedInput, normalizedKw, inputWords) {
+function keywordMatches(normalizedInput, normalizedKw, inputWords, lenient) {
   if (normalizedInput.includes(normalizedKw)) return true;
   const kwWords = normalizedKw.split(" ");
-  return kwWords.every(kw => wordFuzzyMatchesInput(kw, inputWords));
+  return kwWords.every(kw => wordFuzzyMatchesInput(kw, inputWords, lenient));
 }
 
 function scoreIntent(normalizedInput, keywords) {
@@ -71,7 +55,7 @@ function scoreIntent(normalizedInput, keywords) {
 
 function matchIntent(userInput) {
   const n = normalize(userInput);
-  const crisisScore = scoreIntent(n, k.crisis.keywords);
+  const crisisScore = scoreIntent(n, k.crisis.keywords, true);
   if (crisisScore > 0) return { intentId: "CRISIS", score: crisisScore };
 
   const scored = k.intents.map(i => ({ id: i.id, score: scoreIntent(n, i.keywords) }));
