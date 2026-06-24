@@ -199,6 +199,18 @@ export const WIDGET_STYLES = `
   border-bottom-right-radius: 4px;
 }
 
+/* Klikalne linki w odpowiedziach bota (lista specjalistów, zapisy) */
+.co-bubble .co-link {
+  color: #3D6E71;
+  font-weight: 600;
+  text-decoration: underline;
+  text-underline-offset: 2px;
+  word-break: break-word;
+  cursor: pointer;
+}
+.co-bubble .co-link:hover { color: #527A7D; }
+.co-msg.co-user .co-bubble .co-link { color: #ffffff; }
+
 /* ── Suggested questions (chips) ─────────────────────────────────────────── */
 .co-suggestions {
   margin-left: 35px;

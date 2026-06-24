@@ -1,6 +1,6 @@
 import {
   useState, useRef, useEffect, useCallback,
-  KeyboardEvent, ChangeEvent,
+  KeyboardEvent, ChangeEvent, ReactNode,
 } from "react";
 import { matchIntent } from "../lib/matcher";
 import { logUnanswered } from "../lib/logger";
@@ -43,39 +43,71 @@ const QUIZ_OPTIONS: readonly string[] = [
   "Nie wiem, czego potrzebuję",
 ];
 
-const CONTACT = "\n\nAby umówić wizytę lub dopytać o termin:\n📞 573 909 822\n📧 recepcja@centrumotulone.pl";
+// Lista zespołu na stronie centrum — filtrowana po specjalizacji (zweryfikowane slugi)
+const ZESPOL = "https://centrumotulone.pl/o-nas/zespol/";
+const ZAPISY = "https://centrumotulone.pl/zapisy/";
+
+// Stopka każdej odpowiedzi quizu: link do listy specjalistów danej kategorii + link do zapisów.
+// slug = undefined → pełna lista zespołu. Składnia [etykieta](url) jest renderowana jako klikalny link.
+function quizFooter(slug?: string): string {
+  const list = slug ? `${ZESPOL}?e-filter-59db304-specjalizacja=${slug}` : ZESPOL;
+  const listLabel = slug ? "Zobacz specjalistów →" : "Zobacz cały zespół →";
+  return `\n\nOto specjaliści:\n[${listLabel}](${list})\n\nAby umówić wizytę:\n[Umów się online →](${ZAPISY})`;
+}
 
 const QUIZ_RESPONSES: Record<string, string> = {
   "Lęk i stres":
-    "Przy lęku, napięciu i przewlekłym stresie dobrym pierwszym krokiem może być konsultacja psychologiczna lub psychoterapia indywidualna.\n\nPodczas pierwszego spotkania specjalistka pomoże określić, jaka forma pracy będzie dla Ciebie najbardziej odpowiednia." + CONTACT,
+    "Przy lęku, napięciu i przewlekłym stresie dobrym pierwszym krokiem może być konsultacja psychologiczna." + quizFooter("psycholog"),
 
   "Kryzys w związku":
-    "Jeśli trudność dotyczy relacji, rozstania, kryzysu lub komunikacji w związku, dobrym kierunkiem może być konsultacja psychologiczna, psychoterapia indywidualna albo terapia par — zależnie od sytuacji." + CONTACT,
+    "Jeśli trudność dotyczy relacji, rozstania lub komunikacji w związku, dobrym kierunkiem może być terapia par." + quizFooter("terapia-pary"),
 
   "ADHD":
-    "Jeśli podejrzewasz u siebie ADHD, możesz zapytać o diagnozę ADHD metodą DIVA5.\n\nTo dobry kierunek, gdy pojawiają się trudności z koncentracją, organizacją, impulsywnością, przeciążeniem lub poczuciem chaosu." + CONTACT,
+    "Jeśli podejrzewasz u siebie ADHD, możesz zapytać o diagnozę ADHD metodą DIVA5 — pomocną przy trudnościach z koncentracją, organizacją, impulsywnością czy poczuciem chaosu." + quizFooter("diagnoza-adhd-diva5"),
 
   "Menopauza":
-    "Przy trudnościach związanych z menopauzą dobrym pierwszym krokiem może być konsultacja psychologiczna lub psychoterapia.\n\nMożesz porozmawiać o emocjach, zmianach w ciele, relacjach, napięciu i poczuciu przeciążenia." + CONTACT,
+    "Przy trudnościach związanych z menopauzą możesz porozmawiać o emocjach, zmianach w ciele, napięciu i poczuciu przeciążenia podczas konsultacji psychologicznej." + quizFooter("psycholog"),
 
   "Trudne emocje":
-    "Jeśli trudno Ci poradzić sobie z emocjami, napięciem, smutkiem, złością lub przytłoczeniem, dobrym pierwszym krokiem może być konsultacja psychologiczna.\n\nSpecjalistka pomoże dobrać dalszą formę wsparcia." + CONTACT,
+    "Jeśli trudno Ci poradzić sobie z emocjami, napięciem, smutkiem lub przytłoczeniem, dobrym pierwszym krokiem może być konsultacja psychologiczna." + quizFooter("psycholog"),
 
   "Niska samoocena":
-    "Przy niskiej samoocenie, krytycznym myśleniu o sobie lub trudnościach w stawianiu granic pomocna może być psychoterapia indywidualna albo konsultacja psychologiczna na początek." + CONTACT,
+    "Przy niskiej samoocenie, krytycznym myśleniu o sobie lub trudnościach w stawianiu granic pomocna może być konsultacja psychologiczna." + quizFooter("psycholog"),
 
   "Trauma":
-    "Jeśli chcesz pracować z trudnymi doświadczeniami lub traumą, warto zapytać o terapię traumy albo psychoterapię indywidualną.\n\nPierwsza konsultacja pomoże dobrać bezpieczną formę pracy." + CONTACT,
+    "Jeśli chcesz pracować z trudnymi doświadczeniami lub traumą, warto skorzystać ze wsparcia psychotraumatologa. Pierwsza konsultacja pomoże dobrać bezpieczną formę pracy." + quizFooter("psychotraumatolog"),
 
   "Problemy seksualne":
-    "W przypadku trudności seksualnych, bólu, spadku libido, napięcia, wstydu lub pytań związanych z seksualnością dobrym kierunkiem może być konsultacja seksuologiczna." + CONTACT,
+    "W przypadku trudności seksualnych, bólu, spadku libido, wstydu lub pytań związanych z seksualnością dobrym kierunkiem może być konsultacja seksuologiczna." + quizFooter("seksuolog"),
 
   "Relacja z jedzeniem":
-    "Jeśli trudności dotyczą jedzenia, emocji, ciała, kontroli lub napięcia wokół wyglądu, dobrym pierwszym krokiem może być konsultacja psychologiczna lub psychoterapia." + CONTACT,
+    "Jeśli trudności dotyczą jedzenia, emocji, ciała lub napięcia wokół wyglądu, pomocne może być wsparcie psychodietetyczne." + quizFooter("psychodietetyk"),
 
   "Nie wiem, czego potrzebuję":
-    "To całkowicie w porządku, że nie wiesz jeszcze, jakiej formy pomocy potrzebujesz.\n\nNajlepszym pierwszym krokiem jest konsultacja wstępna — bezpłatna, 15-minutowa rozmowa telefoniczna, podczas której recepcja pomoże dobrać odpowiednią ścieżkę wsparcia." + CONTACT,
+    "To całkowicie w porządku, że nie wiesz jeszcze, jakiej formy pomocy potrzebujesz. Możesz zobaczyć cały zespół albo od razu umówić wizytę — pomożemy dobrać odpowiednią ścieżkę." + quizFooter(),
 };
+
+// Renderuje tekst bota, zamieniając składnię [etykieta](url) na klikalne linki.
+// Zwykły tekst i znaki nowej linii pozostają bez zmian (bąbelek ma white-space: pre-line).
+const MD_LINK = /\[([^\]]+)\]\((https?:\/\/[^\s)]+)\)/g;
+function renderRich(text: string): ReactNode[] {
+  const nodes: ReactNode[] = [];
+  let last = 0;
+  let key = 0;
+  let m: RegExpExecArray | null;
+  MD_LINK.lastIndex = 0;
+  while ((m = MD_LINK.exec(text)) !== null) {
+    if (m.index > last) nodes.push(text.slice(last, m.index));
+    nodes.push(
+      <a key={key++} href={m[2]} target="_blank" rel="noopener noreferrer" className="co-link">
+        {m[1]}
+      </a>,
+    );
+    last = m.index + m[0].length;
+  }
+  if (last < text.length) nodes.push(text.slice(last));
+  return nodes;
+}
 
 const BOT_DELAY_MS = 380;
 
@@ -183,7 +215,7 @@ export default function ChatWidget() {
                     <SmileIcon color="white" size={13} />
                   </div>
                 )}
-                <div className="co-bubble">{m.text}</div>
+                <div className="co-bubble">{renderRich(m.text)}</div>
               </div>
             ))}
 
