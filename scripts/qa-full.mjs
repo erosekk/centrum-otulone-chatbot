@@ -27,7 +27,7 @@ function phraseScore(kw) {
 
 function levenshtein(a,b){if(Math.abs(a.length-b.length)>2)return 99;const m=a.length,n=b.length;const d=Array.from({length:m+1},()=>new Array(n+1).fill(0));for(let i=0;i<=m;i++)d[i][0]=i;for(let j=0;j<=n;j++)d[0][j]=j;for(let i=1;i<=m;i++){for(let j=1;j<=n;j++){const c=a[i-1]===b[j-1]?0:1;d[i][j]=Math.min(d[i-1][j]+1,d[i][j-1]+1,d[i-1][j-1]+c);if(i>1&&j>1&&a[i-1]===b[j-2]&&a[i-2]===b[j-1])d[i][j]=Math.min(d[i][j],d[i-2][j-2]+1);}}return d[m][n];}
 
-function maxEditDist(word,lenient){if(lenient){if(word.length<=3)return 0;if(word.length<=6)return 1;return 2;}if(word.length<=5)return 0;if(word.length<=6)return 1;return 2;}
+function maxEditDist(word,lenient){if(lenient){if(word.length<=3)return 0;if(word.length<=6)return 1;return 2;}if(word.length<=5)return 0;if(word.length<=7)return 1;return 2;}
 
 function wordFuzzyMatchesInput(kwWord, inputWords, lenient) {
   const limit = maxEditDist(kwWord, lenient);
@@ -243,6 +243,14 @@ const tests = [
   ["Muszę się spóźnić na wizytę.", "spoznienie", "O"],
   ["Czy mogę zakończyć terapię w dowolnym momencie?", "rezygnacja_z_terapii", "O"],
   ["Co to jest kontrakt terapeutyczny?", "kontrakt_terapeutyczny", "O"],
+
+  // ── P) Nowe tematy FAQ (zniżki, język obcy) ───────────────────────────────
+  ["Czy są zniżki dla studentek?", "znizki_pakiety", "P"],
+  ["Czy oferujecie rabaty?", "znizki_pakiety", "P"],
+  ["Czy da się taniej?", "znizki_pakiety", "P"],
+  ["Czy terapia jest dostępna po angielsku?", "jezyk_obcy", "P"],
+  ["Do you speak english?", "jezyk_obcy", "P"],
+  ["Szukam terapii w języku angielskim.", "jezyk_obcy", "P"],
 ];
 
 // ── Run tests ─────────────────────────────────────────────────────────────────
@@ -299,6 +307,7 @@ const catNames = {
   M: "Wielotematyczne",
   N: "Język naturalny",
   O: "Potencjalne false positives",
+  P: "Nowe tematy (zniżki, język obcy)",
 };
 for (const [cat, { pass: p, fail: f }] of Object.entries(allByCategory)) {
   const icon = f === 0 ? "✓" : "✗";

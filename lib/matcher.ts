@@ -84,8 +84,8 @@ function maxEditDist(word: string, lenient = false): number {
     return 2;
   }
   if (word.length <= 5) return 0;
-  if (word.length <= 6) return 1;
-  return 2;
+  if (word.length <= 7) return 1; // 6–7 znaków: 1 błąd (Damerau łapie przestawienia; chroni przed luźnym "zniżki"≈"związki")
+  return 2;                        // ≥8 znaków: 2 błędy (długie słowa bezpiecznie absorbują 2 literówki)
 }
 
 // Checks whether a single keyword word fuzzy-matches any word in the input.
