@@ -90,7 +90,7 @@ const QUIZ_RESPONSES: Record<string, string> = {
     "Jeśli trudności dotyczą jedzenia, emocji, ciała lub napięcia wokół wyglądu, pomocne może być wsparcie psychodietetyczne." + quizFooter("psychodietetyk"),
 
   "Nie wiem, czego potrzebuję":
-    "To całkowicie w porządku, że nie wiesz jeszcze, jakiej formy pomocy potrzebujesz. Możesz zobaczyć cały zespół albo od razu umówić wizytę — pomożemy dobrać odpowiednią ścieżkę." + quizFooter(),
+    "To całkowicie w porządku, że nie wiesz jeszcze, jakiej formy pomocy potrzebujesz. Tutaj proponujemy darmową konsultację telefoniczną, w której rozwiejesz wszystkie swoje wątpliwości.\n\nAby umówić darmową konsultację telefoniczną:\n[Kliknij w link →](https://centrumotulone.pl/usluga/darmowa-konsultacja-telefoniczna/)",
 };
 
 // Renderuje tekst bota, zamieniając składnię [etykieta](url) na klikalne linki.
