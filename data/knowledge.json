@@ -2009,7 +2009,23 @@
         "czy córka może",
         "czy corka moze",
         "zapisać dorosłą córkę",
-        "zapisac doroslą corke"
+        "zapisac doroslą corke",
+        "żona może przyjść",
+        "zona moze przyjsc",
+        "czy żona może przyjść",
+        "czy zona moze przyjsc",
+        "moja żona może przyjść",
+        "moja zona moze przyjsc",
+        "czy moja żona może",
+        "czy moja zona moze",
+        "partnerka może przyjść",
+        "partnerka moze przyjsc",
+        "dziewczyna może przyjść",
+        "dziewczyna moze przyjsc",
+        "siostra może przyjść",
+        "siostra moze przyjsc",
+        "mama może przyjść",
+        "mama moze przyjsc"
       ],
       "response": "Centrum Otulone przyjmuje wyłącznie dorosłe kobiety (18 lat i więcej).\n\nNiestety, centrum nie prowadzi terapii dla:\n• Dzieci i nastolatków (poniżej 18. roku życia)\n• Mężczyzn\n\nJeśli szukasz pomocy dla osoby niepełnoletniej lub mężczyzny, recepcja chętnie wskaże inne placówki.\n\n📞 573 909 822\n📧 recepcja@centrumotulone.pl\n\n💡 Jeśli chcesz zapisać córkę — musi mieć ukończone 18 lat i samodzielnie skontaktować się z recepcją."
     },
@@ -2412,7 +2428,17 @@
         "zgubiłam radość życia",
         "zgubilam radosc zycia",
         "nie umiem się już cieszyć",
-        "nie umiem sie juz cieszyc"
+        "nie umiem sie juz cieszyc",
+        "rozstałam się z chłopakiem",
+        "rozstalam sie z chlopakiem",
+        "rozstanie z chłopakiem",
+        "rozstanie z chlopakiem",
+        "rozstałam się z dziewczyną",
+        "rozstalam sie z dziewczyna",
+        "po rozstaniu nie daję rady",
+        "po rozstaniu nie daje rady",
+        "rozstałam się i nie daję rady",
+        "rozstalam sie i nie daje rady"
       ],
       "response": "Rozumiem, że jest Ci teraz trudno.\n\nCentrum Otulone oferuje wsparcie psychologiczne i psychoterapię, które pomagają w stanach depresyjnych, przygnębieniu i braku energii.\n\nNajlepszym pierwszym krokiem jest:\n1. Bezpłatna konsultacja telefoniczna (15 min, 0 zł)\n2. Konsultacja psychologiczna (50 min, 250 zł)\n\nNie musisz radzić sobie z tym sama.\n\n📞 573 909 822\n📧 recepcja@centrumotulone.pl"
     },
@@ -3086,7 +3112,16 @@
         "najblizszy wolny termin",
         "jak długo się czeka",
         "jak dlugo sie czeka",
-        "kiedy macie wolne terminy"
+        "kiedy macie wolne terminy",
+        "ile czeka się na termin",
+        "ile czeka sie na termin",
+        "ile się czeka na termin",
+        "ile sie czeka na termin",
+        "jak długo na termin",
+        "jak dlugo na termin",
+        "czekanie na termin",
+        "ile trzeba czekać na termin",
+        "ile trzeba czekac na termin"
       ],
       "response": "Dostępność terminów zależy od aktualnego obłożenia specjalistek.\n\nAby sprawdzić najbliższy wolny termin:\n\n📞 Zadzwoń: 573 909 822\n   (najszybsza forma kontaktu)\n\n📧 Napisz: recepcja@centrumotulone.pl\n\nRecepcja poinformuje Cię o dostępnych terminach i pomoże wybrać odpowiednią specjalistkę."
     },
