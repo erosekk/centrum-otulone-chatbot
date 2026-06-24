@@ -638,12 +638,6 @@
         "zamkniete",
         "czy dziś",
         "czy dzis",
-        "pn",
-        "wt",
-        "sr",
-        "śr",
-        "czw",
-        "pt",
         "poniedziałek",
         "poniedzialek",
         "wtorek",
@@ -753,7 +747,7 @@
         "umówienie wizyty",
         "umowienie wizyty"
       ],
-      "response": "Aby umówić wizytę w Centrum Otulone:\n\n1. 📞 Zadzwoń: 573 909 822\n   (pon–pt, 8:00–21:00)\n\n2. 📧 Napisz e-mail: recepcja@centrumotulone.pl\n\n3. 🌐 Formularz na stronie: centrumotulone.pl/kontakt\n\nDla nowych pacjentek dostępna jest bezpłatna 15-minutowa konsultacja telefoniczna (0 zł) — idealny pierwszy krok bez żadnych zobowiązań."
+      "response": "Godziny pracy recepcji:\n\n⏰ Poniedziałek – piątek: 8:00 – 21:00\n\n❌ Sobota i niedziela: nieczynne\n\nUmówisz wizytę pod linkiem:\n[Umów się online →](https://centrumotulone.pl/zapisy/)\n\nMożesz również zadzwonić:\n📞 573 909 822\n\nMożesz napisać maila:\n📧 recepcja@centrumotulone.pl"
     },
     {
       "id": "bezplatna_konsultacja",
