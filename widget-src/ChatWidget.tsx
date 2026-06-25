@@ -243,7 +243,7 @@ export default function ChatWidget() {
   const bottomRef   = useRef<HTMLDivElement>(null);
   const textareaRef = useRef<HTMLTextAreaElement>(null);
 
-  const showSuggestions = msgs.length === 1 && msgs[0].id === "welcome" && !typing;
+  const showSuggestions = quizStep === null && faqStep === null && !typing;
   const showQuiz        = quizStep === "category" && !typing;
   const showFaq          = faqStep === "list"  && !typing;
 
