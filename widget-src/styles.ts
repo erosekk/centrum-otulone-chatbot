@@ -397,7 +397,11 @@ export const WIDGET_STYLES = `
     padding: 8px 13px;
   }
   .co-chips-scroll {
-    max-height: 220px;
+    /* Na mobile bez wewnętrznego przewijania — lista płynnie wypełnia
+       ekran, a scroll obsługuje wyłącznie .co-messages (jeden, gładki
+       scroll całej rozmowy, bez "uciętego" ostatniego kafelka). */
+    max-height: none;
+    overflow-y: visible;
   }
   .co-suggestions {
     margin-left: 0;
