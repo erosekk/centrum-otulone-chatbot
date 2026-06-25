@@ -14,7 +14,7 @@ interface Msg {
 const WELCOME: Msg = {
   id: "welcome",
   role: "bot",
-  text: "Witam Cię serdecznie. Jestem wirtualną pomocnicą Centrum Otulone.\n\nMogę pomóc Ci znaleźć odpowiednią formę wsparcia lub odpowiedzieć na pytania dotyczące wizyt.",
+  text: "Witaj w Centrum Otulone 🌸\n\nJestem wirtualną asystentką naszego Centrum.\n\nChętnie odpowiem na Twoje pytania dotyczące wizyt i naszej oferty.\n\n👇 Wybierz jedno z najczęściej zadawanych pytań lub napisz własne.",
 };
 
 const SUGGESTED: readonly string[] = [
